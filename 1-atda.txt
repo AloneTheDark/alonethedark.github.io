@@ -1,0 +1,50 @@
+en
+conf ter
+hostname Main (Central)
+no ip domain-lookup 
+enable secret cisco
+
+line console 0
+password class
+login
+line vty 0 15
+password cisco
+login
+exit
+service password-encryption 
+banner motd $ccna5.net$
+
+int s0/0/0
+description PRIMARY CONNECTION
+ip address 128.107.0.1 255.255.255.252
+ipv6 address 2001:DB8:2:1::1/64
+ipv6 address FE80::1 link-local 
+no shutdown 
+
+int s0/0/1
+description BACKUP CONNECTION
+ip address 128.107.0.5 255.255.255.252
+ipv6 address 2001:DB8:3:1::1/64
+ipv6 address FE80::1 link-local 
+no shutdown 
+
+int s0/1/1
+description Connect to Bldg-1
+ip address 10.10.20.1 255.255.255.252
+ipv6 address 2001:DB8:1:1::1/64
+ipv6 address FE80::1 link-local 
+no shutdown 
+exit 
+
+ip route 10.10.1.0 255.255.255.0 s0/1/1
+
+ip route 10.10.2.0 255.255.255.0 s0/1/1
+
+ipv6 route 2001:DB8:1:A::/64 s0/1/1
+ipv6 route 2001:DB8:1:B::/64 s0/1/1
+
+ip route 0.0.0.0 0.0.0.0 s0/0/0
+ip route 0.0.0.0 0.0.0.0 s0/0/1 2
+ipv6 route ::/0 s0/0/0
+ipv6 route ::/0 s0/0/1 2
+ipv6 unicast-routing

@@ -1,0 +1,64 @@
+Switch(config)#hostname SW-1[CHECK HOSTNAME ON INSTRUCTIONS]
+SW-1(config)#banner motd $This is Switch$
+
+SW-1(config)#line console 0
+SW-1(config-line)#password cisco
+SW-1(config-line)#login
+SW-1(config-line)#exit
+
+SW-1(config)#enable secret class
+
+SW-1(config)#service password-encryption
+
+SW-1(config)#interface vlan1
+SW-1(config-if)#ip address 10.10.10.100[check IP on Addressing Table] 255.255.255.0
+SW-1(config-if)#ip default-gateway 10.10.10.1[check IP address of router port to Switch]
+SW-1(config-if)#no shutdown
+SW-1(config-if)#exit
+
+SW-1(config)#ip domain-name cisco.com
+
+SW-1(config)#crypto key generate rsa
+The name for the keys will be: SW-1.cisco.com
+Choose the size of the key modulus in the range of 360 to 2048 for your
+General Purpose Keys.
+Choosing a key modulus greater than 512 may take
+a few minutes.
+How many bits in the modulus [512]: 1024
+%
+Generating 1024 bit RSA keys, keys will be non-exportable…[OK]
+
+SW-1(config)#ip ssh version 2
+
+SW-1(config)#username admin secret ccna
+
+SW-1(config)#line vty 0 15
+
+SW-1(config-line)#login local
+
+SW-1(config-line)#transport input ssh
+
+SW-1(config-line)#exit
+
+SW-1(config-if)#int fa0/1
+SW-1(config-if)#no shutdown
+
+SW-1(config)#int range fa0/2-24
+SW-1(config-if-range)#shutdown
+
+SW-1(config-if-range)#int g0/2
+SW-1(config-if)#shutdown
+
+SW-1(config)#int range fa0/1-24
+SW-1(config-if-range)#switchport mode access
+SW-1(config-if-range)#switchport port-security
+SW-1(config-if-range)#switchport port-security mac-address sticky
+SW-1(config-if-range)#switchport port-security maximum 2
+SW-1(config-if-range)# switchport port-security violation shutdown
+
+SW-1(config)#int range g0/1-2
+SW-1(config-if-range)#switchport mode access
+SW-1(config-if-range)#switchport port-security
+SW-1(config-if-range)#switchport port-security mac-address sticky
+SW-1(config-if-range)#switchport port-security maximum 2
+SW-1(config-if-range)# switchport port-security violation shutdown

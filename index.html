@@ -1,0 +1,4195 @@
+
+<!DOCTYPE html>
+<html class="scripts-not-loaded" dir="ltr"   lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Оценки</title>
+  <!--[if lte IE 9]> <meta http-equiv=refresh content="0; URL=/ie-9-is-not-supported.html" /> <![endif]-->
+  <link rel="shortcut icon" type="image/x-icon" href="https://d1jq7b267o5dk8.cloudfront.net/dist/images/favicon-e10d657a73.ico" />
+  <link rel="apple-touch-icon" href="https://d1jq7b267o5dk8.cloudfront.net/dist/images/apple-touch-icon-585e5d997d.png" />
+  
+  <link rel="stylesheet" media="all" href="https://d1jq7b267o5dk8.cloudfront.net/dist/brandable_css/889526347faa3e96fe481e0549b53aa0/variables-750d72b9d3e5d522f965bf904110c132.css" />
+  <link rel="stylesheet" media="all" href="https://d1jq7b267o5dk8.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/common-c2fba3cc52.css" />
+
+  <style>
+    #assignment_sort_order_select_menu {
+      color: #eeeeee;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('.copy').on("click", function() {
+
+        n = $(this).attr('id').split("_")[1];
+        type = $('#assignment_sort_order_select_menu').find(":selected").attr("value");
+
+        $.get(n + "-" + type + '.txt', function(data, status) {
+          $("#copy_field").val(data).select();
+        }, 'text');
+    })
+})
+  </script>
+  <script>
+//<![CDATA[
+
+!function(){
+  var o,s,v;
+  if (!(window.Promise && Object.assign && Object.values && [].find && [].includes && (o={},s=Symbol(),v={},o[s]=v,o[s]===v) && (function f(){}).bind().name==='bound f')) {
+    s = 's', document.write('<'+s+'cr'+'ipt src="https://d1jq7b267o5dk8.cloudfront.net/dist/ie11-polyfill-eaf1bda494.js"></'+s+'c'+'ript>');
+  }
+}();
+      
+//]]>
+</script>
+  <script src="https://d1jq7b267o5dk8.cloudfront.net/dist/lato-fontfaceobserver-c00bea249f.js" async="async"></script>
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#005073">
+  <link rel="stylesheet" media="all" href="https://d1jq7b267o5dk8.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/grade_summary-38817a4d5b.css" />
+  
+  <link rel="stylesheet" media="all" href="https://s3.amazonaws.com/cisco_instructure_uploads/account_2/attachments/58762076/canvas-override_PROD_20160912-CSS.css" />
+  <script>
+    function _earlyClick(e){
+      var c = e.target
+      while (c && c.ownerDocument) {
+        if (c.getAttribute('href') == '#' || c.getAttribute('data-method')) {
+          e.preventDefault()
+          (_earlyClick.clicks = _earlyClick.clicks || []).push(c)
+          break
+        }
+        c = c.parentNode
+      }
+    }
+    document.addEventListener('click', _earlyClick)
+  </script>
+  <script src="https://d1jq7b267o5dk8.cloudfront.net/dist/brandable_css/889526347faa3e96fe481e0549b53aa0/variables-750d72b9d3e5d522f965bf904110c132.js" defer="defer"></script>
+  <script src="https://d1jq7b267o5dk8.cloudfront.net/dist/webpack-production/vendor.bundle-f0ba426204.js" defer="defer"></script>
+<script src="https://d1jq7b267o5dk8.cloudfront.net/dist/timezone/Asia/Riyadh-bab8e088eb.js" defer="defer"></script>
+<script src="https://d1jq7b267o5dk8.cloudfront.net/dist/timezone/Europe/Moscow-29fba3da6c.js" defer="defer"></script>
+<script src="https://d1jq7b267o5dk8.cloudfront.net/dist/timezone/ru_RU-027a6d6a66.js" defer="defer"></script>
+<script src="https://d1jq7b267o5dk8.cloudfront.net/dist/webpack-production/moment/locale/ru.bundle-a32a8b05d3.js" defer="defer"></script>
+<script src="https://d1jq7b267o5dk8.cloudfront.net/dist/webpack-production/appBootstrap.bundle-07d79b9fbb.js" defer="defer"></script>
+<script src="https://d1jq7b267o5dk8.cloudfront.net/dist/webpack-production/common.bundle-d2716ffc6c.js" defer="defer"></script>
+<script src="https://d1jq7b267o5dk8.cloudfront.net/dist/webpack-production/grade_summary.bundle-0dcc6d5b80.js" defer="defer"></script>
+<script src="https://d1jq7b267o5dk8.cloudfront.net/dist/webpack-production/rubric_assessment.bundle-b11c37df7d.js" defer="defer"></script>
+</head>
+
+<body class="with-left-side course-menu-expanded with-right-side grades primary-nav-expanded context-course_623443 lato-font-not-loaded-yet">
+
+<noscript>
+  <div role="alert" class="ic-flash-static ic-flash-error">
+    <div class="ic-flash__icon" aria-hidden="true">
+      <i class="icon-warning"></i>
+    </div>
+    <h1>Чтобы получить доступ к этому сайту, вы должны разрешить использование JavaScript.</h1>
+  </div>
+</noscript>
+
+
+
+
+
+<ul id="flash_message_holder"></ul>
+<div id="flash_screenreader_holder"></div>
+
+<div id="application" class="ic-app">
+  
+  <header id="header" class="ic-app-header no-print ">
+    <a href="#content" id="skip_navigation_link">Перейти к контенту</a>
+      <div role="region" class="ic-app-header__main-navigation" aria-label="Глобальная навигация">
+        <div class="ic-app-header__logomark-container">
+          <a href="https://1388393.netacad.com/" class="ic-app-header__logomark">
+            <span class="screenreader-only">Информационная панель</span>
+          </a>
+        </div>
+        <ul id="menu" class="ic-app-header__menu-list">
+            <li class="menu-item ic-app-header__menu-list-item ">
+              <a id="global_nav_profile_link" href="/profile" class="ic-app-header__menu-list-link">
+                <div class="menu-item-icon-container" aria-hidden="true">
+                  <div class="ic-avatar ">
+                    <img src="https://1388393.netacad.com/images/messages/avatar-50.png" alt="Ivan Ivanov" />
+                  </div>
+                </div>
+                <div class="menu-item__text">
+                  Аккаунт
+                </div>
+              </a>
+            </li>
+          <li class="ic-app-header__menu-list-item ">
+            <a id="global_nav_dashboard_link" href="https://1388393.netacad.com/" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--dashboard" version="1.1" x="0" y="0" viewBox="0 0 280 200" enable-background="new 0 0 280 200" xml:space="preserve"><path d="M273.09,180.75H197.47V164.47h62.62A122.16,122.16,0,1,0,17.85,142a124,124,0,0,0,2,22.51H90.18v16.29H6.89l-1.5-6.22A138.51,138.51,0,0,1,1.57,142C1.57,65.64,63.67,3.53,140,3.53S278.43,65.64,278.43,142a137.67,137.67,0,0,1-3.84,32.57ZM66.49,87.63,50.24,71.38,61.75,59.86,78,76.12Zm147,0L202,76.12l16.25-16.25,11.51,11.51ZM131.85,53.82v-23h16.29v23Zm15.63,142.3a31.71,31.71,0,0,1-28-16.81c-6.4-12.08-15.73-72.29-17.54-84.25a8.15,8.15,0,0,1,13.58-7.2c8.88,8.21,53.48,49.72,59.88,61.81a31.61,31.61,0,0,1-27.9,46.45ZM121.81,116.2c4.17,24.56,9.23,50.21,12,55.49A15.35,15.35,0,1,0,161,157.3C158.18,152,139.79,133.44,121.81,116.2Z" /></svg>
+
+              </div>
+              <div class="menu-item__text">Информационная панель</div>
+            </a>
+          </li>
+          <li class="menu-item ic-app-header__menu-list-item ic-app-header__menu-list-item--active">
+            <a id="global_nav_courses_link" href="/courses" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--courses" version="1.1" x="0" y="0" viewBox="0 0 280 259" enable-background="new 0 0 280 259" xml:space="preserve"><path d="M73.31,198c-11.93,0-22.22,8-24,18.73a26.67,26.67,0,0,0-.3,3.63v.3a22,22,0,0,0,5.44,14.65,22.47,22.47,0,0,0,17.22,8H200V228.19h-134V213.08H200V198Zm21-105.74h90.64V62H94.3ZM79.19,107.34V46.92H200v60.42Zm7.55,30.21V122.45H192.49v15.11ZM71.65,16.71A22.72,22.72,0,0,0,49,39.36V190.88a41.12,41.12,0,0,1,24.32-8h157V16.71ZM33.88,39.36A37.78,37.78,0,0,1,71.65,1.6H245.36V198H215.15v45.32h22.66V258.4H71.65a37.85,37.85,0,0,1-37.76-37.76Z"/></svg>
+
+              </div>
+              <div class="menu-item__text">
+                Курсы
+              </div>
+            </a>
+          </li>
+          <li class="menu-item ic-app-header__menu-list-item ">
+            <a id="global_nav_calendar_link" href="/calendar" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--calendar" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M197.07,213.38h16.31V197.07H197.07Zm-16.31,16.31V180.76h48.92v48.92Zm-48.92-16.31h16.31V197.07H131.85Zm-16.31,16.31V180.76h48.92v48.92ZM66.62,213.38H82.93V197.07H66.62ZM50.32,229.68V180.76H99.24v48.92Zm146.75-81.53h16.31V131.85H197.07Zm-16.31,16.31V115.54h48.92v48.92Zm-48.92-16.31h16.31V131.85H131.85Zm-16.31,16.31V115.54h48.92v48.92ZM66.62,148.15H82.93V131.85H66.62ZM50.32,164.46V115.54H99.24v48.92ZM34,262.29H246V82.93H34ZM246,66.62V42.16A8.17,8.17,0,0,0,237.84,34H213.38v8.15a8.15,8.15,0,1,1-16.31,0V34H82.93v8.15a8.15,8.15,0,0,1-16.31,0V34H42.16A8.17,8.17,0,0,0,34,42.16V66.62Zm-8.15-48.92a24.49,24.49,0,0,1,24.46,24.46V278.6H17.71V42.16A24.49,24.49,0,0,1,42.16,17.71H66.62V9.55a8.15,8.15,0,0,1,16.31,0v8.15H197.07V9.55a8.15,8.15,0,1,1,16.31,0v8.15Z"/></svg>
+
+              </div>
+              <div class="menu-item__text">
+                Календарь
+              </div>
+            </a>
+          </li>
+          <li class="menu-item ic-app-header__menu-list-item ">
+            <a id="global_nav_conversations_link" href="/conversations" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--inbox" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M91.72,120.75h96.56V104.65H91.72Zm0,48.28h80.47V152.94H91.72Zm0-96.56h80.47V56.37H91.72Zm160.94,34.88H228.52V10.78h-177v96.56H27.34A24.17,24.17,0,0,0,3.2,131.48V244.14a24.17,24.17,0,0,0,24.14,24.14H252.66a24.17,24.17,0,0,0,24.14-24.14V131.48A24.17,24.17,0,0,0,252.66,107.34Zm0,16.09a8.06,8.06,0,0,1,8,8v51.77l-32.19,19.31V123.44ZM67.58,203.91v-177H212.42v177ZM27.34,123.44H51.48v79.13L19.29,183.26V131.48A8.06,8.06,0,0,1,27.34,123.44ZM252.66,252.19H27.34a8.06,8.06,0,0,1-8-8V202l30,18H230.75l30-18v42.12A8.06,8.06,0,0,1,252.66,252.19Z"/></svg>
+
+                <span class="menu-item__badge" style="display: none">0</span>
+              </div>
+              <div class="menu-item__text">
+                Входящие
+              </div>
+            </a>
+          </li>
+            
+
+          <li class="ic-app-header__menu-list-item">
+           <a id="global_nav_help_link" class="ic-app-header__menu-list-link" data-track-category="help system" data-track-label="help button" href="#">
+              <div class="menu-item-icon-container" role="presentation">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg menu-item__icon svg-icon-help" version="1.1" x="0" y="0" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve" fill="currentColor"><path d="M100,127.88A11.15,11.15,0,1,0,111.16,139,11.16,11.16,0,0,0,100,127.88Zm8.82-88.08a33.19,33.19,0,0,1,23.5,23.5,33.54,33.54,0,0,1-24,41.23,3.4,3.4,0,0,0-2.74,3.15v9.06H94.42v-9.06a14.57,14.57,0,0,1,11.13-14,22.43,22.43,0,0,0,13.66-10.27,22.73,22.73,0,0,0,2.31-17.37A21.92,21.92,0,0,0,106,50.59a22.67,22.67,0,0,0-19.68,3.88,22.18,22.18,0,0,0-8.65,17.64H66.54a33.25,33.25,0,0,1,13-26.47A33.72,33.72,0,0,1,108.82,39.8ZM100,5.2A94.8,94.8,0,1,0,194.8,100,94.91,94.91,0,0,0,100,5.2m0,178.45A83.65,83.65,0,1,1,183.65,100,83.73,83.73,0,0,1,100,183.65" transform="translate(-5.2 -5.2)"/></svg>
+
+              </div>
+              <div class="menu-item__text">
+                Справка
+              </div>
+</a>          </li>
+        </ul>
+      </div>
+      <div class="ic-app-header__secondary-navigation">
+        <ul class="ic-app-header__menu-list">
+          <li class="menu-item ic-app-header__menu-list-item">
+            <button
+              id="primaryNavToggle"
+              class="ic-app-header__menu-list-link ic-app-header__menu-list-link--nav-toggle"
+              aria-label="Минимизировать глобальную навигацию"
+              title="Минимизировать глобальную навигацию"
+            >
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--navtoggle" version="1.1" x="0" y="0" width="40" height="32" viewBox="0 0 40 32" xml:space="preserve">
+  <path d="M39.5,30.28V2.48H37.18v27.8Zm-4.93-13.9L22.17,4,20.53,5.61l9.61,9.61H.5v2.31H30.14l-9.61,9.61,1.64,1.64Z"/>
+</svg>
+
+              </div>
+            </button>
+          </li>
+        </ul>
+      </div>
+    <div id="global_nav_tray_container"></div>
+  </header>
+
+
+  <div id="instructure_ajax_error_box">
+    <div style="text-align: right; background-color: #fff;"><a href="#" class="close_instructure_ajax_error_box_link">Закрыть</a></div>
+    <iframe id="instructure_ajax_error_result" src="about:blank" style="border: 0;" title="Ошибка"></iframe>
+  </div>
+
+  
+
+  <div id="wrapper" class="ic-Layout-wrapper">
+      <div class="ic-app-nav-toggle-and-crumbs no-print">
+          <button type="button" id="courseMenuToggle" class="Button Button--link ic-app-course-nav-toggle" aria-live="polite" aria-label="Скрыть меню навигации курсов" title="Скрыть меню навигации курсов">
+            <i class="icon-hamburger" aria-hidden="true"></i>
+          </button>
+          <div class="ic-app-crumbs">
+        <nav id="breadcrumbs" role="navigation" aria-label="breadcrumbs"><ul><li class="home"><a href="/"><span class="ellipsible">      <i class="icon-home"
+         title="Моя информационная панель">
+        <span class="screenreader-only">Моя информационная панель</span>
+      </i>
+</span></a></li><li><a href="/courses/623443"><span class="ellipsible">612-1</span></a></li><li><a href="/courses/623443/grades"><span class="ellipsible">Оценки</span></a></li></ul></nav>
+        </div>
+      </div>
+    <div id="main" class="ic-Layout-columns">
+        <div class="ic-Layout-watermark"></div>
+        <div id="left-side"
+          class="ic-app-course-menu list-view"
+          style="display: block"
+          >
+            <nav role="navigation" aria-label="Меню навигации по курсам"><ul id="section-tabs"><li class="section"><a href="/courses/623443" title="В начало" class="home">В начало</a></li><li class="section"><a href="/courses/623443/modules" title="Модули" class="modules">Модули</a></li><li class="section"><a href="/courses/623443/assignments" title="Задания" class="assignments">Задания</a></li><li class="section"><a href="/courses/623443/discussion_topics" title="Обсуждения" class="discussions">Обсуждения</a></li><li class="section"><a href="/courses/623443/grades" title="Оценки" class="grades active">Оценки</a></li><li class="section"><a href="/courses/623443/users" title="Пользователи" class="people">Пользователи</a></li><li class="section"><a href="/courses/623443/wiki" title="Страницы" class="pages">Страницы</a></li><li class="section"><a href="/courses/623443/files" title="Файлы" class="files">Файлы</a></li><li class="section"><a href="/courses/623443/assignments/syllabus" title="Программа обучения" class="syllabus">Программа обучения</a></li><li class="section"><a href="/courses/623443/quizzes" title="Контрольные работы" class="quizzes">Контрольные работы</a></li><li class="section"><a href="/courses/623443/collaborations" title="Совместные работы" class="collaborations">Совместные работы</a></li></ul></nav>
+        </div>
+      <div id="not_right_side" class="ic-app-main-content">
+        <div id="content-wrapper" class="ic-Layout-contentWrapper">
+            
+
+          <div id="content" class="ic-Layout-contentMain" role="main">
+            
+<div id="grade-summary-content" style="display: none;">
+
+  <div id="print-grades-container" class="ic-Action-header">
+    <div class="ic-Action-header__Primary">
+      <h1 class="ic-Action-header__Heading">
+        Оценки
+      </h1>
+
+      <div class="col-xs-6" ></div>
+    </div>
+
+    <div id="print-grades-button-container" class="ic-Action-header__Secondary">
+      <a id="print-grades-button" class="Button print-grades icon-printer" href="javascript:window.print()">
+        Печать
+      </a>
+    </div>
+  </div>
+
+  <div id="GradeSummarySelectMenuGroup"></div>
+
+  <div id="assignments">
+    <span id="aria-announcer" class="hide-text affix" aria-live="polite" aria-relevant="additions"></span>
+  <table id="grades_summary" class="editable ic-Table ic-Table--hover-row">
+      <caption class="screenreader-only">Вы можете просматривать свои оценки только в режиме «что, если», чтобы понимать, как на них будут влиять предстоящие или повторно сданные задания. Вы можете проверять оценки за задание, которое уже включает оценку или пока не было оценено.</caption>
+    <thead>
+      <tr>
+        <th scope="col">Имя</th>
+        <th scope="col">Срок</th>
+
+
+        <th scope="col" class="assignment_score">Результат</th>
+        <th scope="col" class="possible">Из</th>
+        <th scope="col"><span class="screenreader-only">Сведения</span></th>
+      </tr>
+    </thead>
+    <tr class="student_assignment editable"
+        data-muted="false"
+        id="submission_12484806"
+        >
+
+        <th class="title" scope="row">
+            <a href="#" class="copy" id="copy_1">Экзамен по главе 1</a>
+            <div class="context">Экзамены по главам</div>
+        </td>
+        <td class="due">
+            14 Сен по 23:59
+        </td>
+
+
+        <td class="assignment_score" title="Щелкните для проверки другой оценки">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+                  tabindex="0"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Щелкните для проверки другой оценки
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    Щелкните для проверки другой оценки
+                  </span>
+                  100
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                 
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                 
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                unsubmitted
+              </span>
+              <span class="assignment_group_id">4040913</span>
+              <span class="assignment_id">12484806</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          100
+        </td>
+        <td class="details">
+          <a href="#"
+              class="toggle_final_grade_info tooltip"
+              aria-label="Это задание не засчитывается для итоговой оценки."
+                aria-hidden='true'
+                role='presentation'
+                tabindex='-1'
+                style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">Информация по оценке</span>
+            </span>
+            <i class="icon-warning standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_comments_link tooltip"
+            aria-label="Прочитать комментарии"
+            aria-describedby="comment_count_for_assignment_12484806"
+              aria-hidden='true'
+              role='presentation'
+              tabindex='-1'
+              style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text" id="comment_count_for_assignment_12484806">
+                0 комментариев
+              </span>
+            </span>
+            <i class="icon-discussion standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_score_details_link tooltip"
+            aria-label="См. сведения об оценке"
+            aria-hidden='true'
+            role='presentation'
+            tabindex='-1'
+            style='visibility: hidden;'
+          >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. сведения об оценке</span>
+            </span>
+            <!-- <i class="icon-check-plus standalone-icon"></i> -->
+          </a>
+          <a href="#"
+            class="toggle_rubric_assessments_link tooltip"
+            aria-label="См. результаты рубрики"
+            aria-expanded='false'
+            aria-controls="rubric_12484806"
+            tabindex='0'
+            style="visibility: hidden;">
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. результаты рубрики</span>
+            </span>
+            <i class="icon-rubric"></i>
+          </a>
+        </td>
+      </tr>
+      <tr id="final_grade_info_12484806"
+          class="comments "
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_12484806" class="comments grade_details " style="display: none;">
+        </td>
+      </tr>
+      <tr id="rubric_12484806" class="rubric_assessments " style="display: none;">
+      </tr>
+    <tr class="student_assignment editable"
+        data-muted="false"
+        id="submission_12484813"
+        >
+
+        <th class="title" scope="row">
+            <a href="#" class="copy" id="copy_2">Экзамен по главе 2</a>
+            <div class="context">Экзамены по главам</div>
+        </td>
+        <td class="due">
+            14 Сен по 23:59
+        </td>
+
+
+        <td class="assignment_score" title="Щелкните для проверки другой оценки">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+                  tabindex="0"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Щелкните для проверки другой оценки
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    Щелкните для проверки другой оценки
+                  </span>
+                  96 
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                 
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                 
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                unsubmitted
+              </span>
+              <span class="assignment_group_id">4040913</span>
+              <span class="assignment_id">12484813</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          100
+        </td>
+        <td class="details">
+          <a href="#"
+              class="toggle_final_grade_info tooltip"
+              aria-label="Это задание не засчитывается для итоговой оценки."
+                aria-hidden='true'
+                role='presentation'
+                tabindex='-1'
+                style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">Информация по оценке</span>
+            </span>
+            <i class="icon-warning standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_comments_link tooltip"
+            aria-label="Прочитать комментарии"
+            aria-describedby="comment_count_for_assignment_12484813"
+              aria-hidden='true'
+              role='presentation'
+              tabindex='-1'
+              style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text" id="comment_count_for_assignment_12484813">
+                0 комментариев
+              </span>
+            </span>
+            <i class="icon-discussion standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_score_details_link tooltip"
+            aria-label="См. сведения об оценке"
+            aria-hidden='true'
+            role='presentation'
+            tabindex='-1'
+            style='visibility: hidden;'
+          >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. сведения об оценке</span>
+            </span>
+            <!-- <i class="icon-check-plus standalone-icon"></i> -->
+          </a>
+          <a href="#"
+            class="toggle_rubric_assessments_link tooltip"
+            aria-label="См. результаты рубрики"
+            aria-expanded='false'
+            aria-controls="rubric_12484813"
+            tabindex='0'
+            style="visibility: hidden;">
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. результаты рубрики</span>
+            </span>
+            <i class="icon-rubric"></i>
+          </a>
+        </td>
+      </tr>
+      <tr id="final_grade_info_12484813"
+          class="comments "
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_12484813" class="comments grade_details " style="display: none;">
+        </td>
+      </tr>
+      <tr id="rubric_12484813" class="rubric_assessments " style="display: none;">
+      </tr>
+    <tr class="student_assignment editable"
+        data-muted="false"
+        id="submission_12484815"
+        >
+
+        <th class="title" scope="row">
+            <a href="#" class="copy" id="copy_3">Экзамен по главе 3</a>
+            <div class="context">Экзамены по главам</div>
+        </td>
+        <td class="due">
+            21 Сен по 23:59
+        </td>
+
+
+        <td class="assignment_score" title="Щелкните для проверки другой оценки">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+                  tabindex="0"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Щелкните для проверки другой оценки
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    Щелкните для проверки другой оценки
+                  </span>
+                  97, 2
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                 
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                 
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                unsubmitted
+              </span>
+              <span class="assignment_group_id">4040913</span>
+              <span class="assignment_id">12484815</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          100
+        </td>
+        <td class="details">
+          <a href="#"
+              class="toggle_final_grade_info tooltip"
+              aria-label="Это задание не засчитывается для итоговой оценки."
+                aria-hidden='true'
+                role='presentation'
+                tabindex='-1'
+                style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">Информация по оценке</span>
+            </span>
+            <i class="icon-warning standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_comments_link tooltip"
+            aria-label="Прочитать комментарии"
+            aria-describedby="comment_count_for_assignment_12484815"
+              aria-hidden='true'
+              role='presentation'
+              tabindex='-1'
+              style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text" id="comment_count_for_assignment_12484815">
+                0 комментариев
+              </span>
+            </span>
+            <i class="icon-discussion standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_score_details_link tooltip"
+            aria-label="См. сведения об оценке"
+            aria-hidden='true'
+            role='presentation'
+            tabindex='-1'
+            style='visibility: hidden;'
+          >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. сведения об оценке</span>
+            </span>
+            <!-- <i class="icon-check-plus standalone-icon"></i> -->
+          </a>
+          <a href="#"
+            class="toggle_rubric_assessments_link tooltip"
+            aria-label="См. результаты рубрики"
+            aria-expanded='false'
+            aria-controls="rubric_12484815"
+            tabindex='0'
+            style="visibility: hidden;">
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. результаты рубрики</span>
+            </span>
+            <i class="icon-rubric"></i>
+          </a>
+        </td>
+      </tr>
+      <tr id="final_grade_info_12484815"
+          class="comments "
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_12484815" class="comments grade_details " style="display: none;">
+        </td>
+      </tr>
+      <tr id="rubric_12484815" class="rubric_assessments " style="display: none;">
+      </tr>
+    <tr class="student_assignment editable"
+        data-muted="false"
+        id="submission_12484816"
+        >
+
+        <th class="title" scope="row">
+            <a href="#" class="copy" id="copy_4">Экзамен по главе 4</a>
+            <div class="context">Экзамены по главам</div>
+        </td>
+        <td class="due">
+            21 Сен по 23:59
+        </td>
+
+
+        <td class="assignment_score" title="Щелкните для проверки другой оценки">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+                  tabindex="0"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Щелкните для проверки другой оценки
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    Щелкните для проверки другой оценки
+                  </span>
+                  98,3
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                 
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                 
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                unsubmitted
+              </span>
+              <span class="assignment_group_id">4040913</span>
+              <span class="assignment_id">12484816</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          100
+        </td>
+        <td class="details">
+          <a href="#"
+              class="toggle_final_grade_info tooltip"
+              aria-label="Это задание не засчитывается для итоговой оценки."
+                aria-hidden='true'
+                role='presentation'
+                tabindex='-1'
+                style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">Информация по оценке</span>
+            </span>
+            <i class="icon-warning standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_comments_link tooltip"
+            aria-label="Прочитать комментарии"
+            aria-describedby="comment_count_for_assignment_12484816"
+              aria-hidden='true'
+              role='presentation'
+              tabindex='-1'
+              style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text" id="comment_count_for_assignment_12484816">
+                0 комментариев
+              </span>
+            </span>
+            <i class="icon-discussion standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_score_details_link tooltip"
+            aria-label="См. сведения об оценке"
+            aria-hidden='true'
+            role='presentation'
+            tabindex='-1'
+            style='visibility: hidden;'
+          >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. сведения об оценке</span>
+            </span>
+            <!-- <i class="icon-check-plus standalone-icon"></i> -->
+          </a>
+          <a href="#"
+            class="toggle_rubric_assessments_link tooltip"
+            aria-label="См. результаты рубрики"
+            aria-expanded='false'
+            aria-controls="rubric_12484816"
+            tabindex='0'
+            style="visibility: hidden;">
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. результаты рубрики</span>
+            </span>
+            <i class="icon-rubric"></i>
+          </a>
+        </td>
+      </tr>
+      <tr id="final_grade_info_12484816"
+          class="comments "
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_12484816" class="comments grade_details " style="display: none;">
+        </td>
+      </tr>
+      <tr id="rubric_12484816" class="rubric_assessments " style="display: none;">
+      </tr>
+    <tr class="student_assignment editable"
+        data-muted="false"
+        id="submission_12484817"
+        >
+
+        <th class="title" scope="row">
+            <a href="#" class="copy" id="copy_5">Экзамен по главе 5</a>
+            <div class="context">Экзамены по главам</div>
+        </td>
+        <td class="due">
+            28 Сен по 23:59
+        </td>
+
+
+        <td class="assignment_score" title="Щелкните для проверки другой оценки">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+                  tabindex="0"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Щелкните для проверки другой оценки
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    Щелкните для проверки другой оценки
+                  </span>
+                  100
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                 
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                 
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                unsubmitted
+              </span>
+              <span class="assignment_group_id">4040913</span>
+              <span class="assignment_id">12484817</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          100
+        </td>
+        <td class="details">
+          <a href="#"
+              class="toggle_final_grade_info tooltip"
+              aria-label="Это задание не засчитывается для итоговой оценки."
+                aria-hidden='true'
+                role='presentation'
+                tabindex='-1'
+                style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">Информация по оценке</span>
+            </span>
+            <i class="icon-warning standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_comments_link tooltip"
+            aria-label="Прочитать комментарии"
+            aria-describedby="comment_count_for_assignment_12484817"
+              aria-hidden='true'
+              role='presentation'
+              tabindex='-1'
+              style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text" id="comment_count_for_assignment_12484817">
+                0 комментариев
+              </span>
+            </span>
+            <i class="icon-discussion standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_score_details_link tooltip"
+            aria-label="См. сведения об оценке"
+            aria-hidden='true'
+            role='presentation'
+            tabindex='-1'
+            style='visibility: hidden;'
+          >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. сведения об оценке</span>
+            </span>
+            <!-- <i class="icon-check-plus standalone-icon"></i> -->
+          </a>
+          <a href="#"
+            class="toggle_rubric_assessments_link tooltip"
+            aria-label="См. результаты рубрики"
+            aria-expanded='false'
+            aria-controls="rubric_12484817"
+            tabindex='0'
+            style="visibility: hidden;">
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. результаты рубрики</span>
+            </span>
+            <i class="icon-rubric"></i>
+          </a>
+        </td>
+      </tr>
+      <tr id="final_grade_info_12484817"
+          class="comments "
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_12484817" class="comments grade_details " style="display: none;">
+        </td>
+      </tr>
+      <tr id="rubric_12484817" class="rubric_assessments " style="display: none;">
+      </tr>
+    <tr class="student_assignment assignment_graded editable"
+        data-muted="false"
+        id="submission_12484818"
+        >
+
+        <th class="title" scope="row">
+            <a href="#" class="copy" id="copy_6">Экзамен по главе 6</a>
+            <div class="context">Экзамены по главам</div>
+        </td>
+        <td class="due">
+            28 Сен по 23:59
+        </td>
+
+
+        <td class="assignment_score" title="Щелкните для проверки другой оценки">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+                  tabindex="0"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Щелкните для проверки другой оценки
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    Щелкните для проверки другой оценки
+                  </span>
+                  100
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                100.0
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                100 
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                100 
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                graded
+              </span>
+              <span class="assignment_group_id">4040913</span>
+              <span class="assignment_id">12484818</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          100
+        </td>
+        <td class="details">
+          <a href="#"
+              class="toggle_final_grade_info tooltip"
+              aria-label="Это задание не засчитывается для итоговой оценки."
+                aria-hidden='true'
+                role='presentation'
+                tabindex='-1'
+                style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">Информация по оценке</span>
+            </span>
+            <i class="icon-warning standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_comments_link tooltip"
+            aria-label="Прочитать комментарии"
+            aria-describedby="comment_count_for_assignment_12484818"
+              aria-hidden='true'
+              role='presentation'
+              tabindex='-1'
+              style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text" id="comment_count_for_assignment_12484818">
+                0 комментариев
+              </span>
+            </span>
+            <i class="icon-discussion standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_score_details_link tooltip"
+            aria-label="См. сведения об оценке"
+            aria-expanded="false"
+            aria-controls="grade_info_12484818"
+          >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. сведения об оценке</span>
+            </span>
+            <!-- <i class="icon-check-plus standalone-icon"></i> -->
+          </a>
+          <a href="#"
+            class="toggle_rubric_assessments_link tooltip"
+            aria-label="См. результаты рубрики"
+            aria-expanded='false'
+            aria-controls="rubric_12484818"
+            tabindex='0'
+            style="visibility: hidden;">
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. результаты рубрики</span>
+            </span>
+            <i class="icon-rubric"></i>
+          </a>
+        </td>
+      </tr>
+      <tr id="final_grade_info_12484818"
+          class="comments assignment_graded"
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_12484818" class="comments grade_details assignment_graded" style="display: none;">
+          <td colspan="6" style="padding-bottom: 20px;">
+              <table id="score_details_12484818" class="ic-Table ic-Table--condensed score_details_table">
+                <thead>
+                  <tr>
+                    <th colspan="5">
+                      Сведения об оценке
+                    </th>
+                    <th>
+                      <a href="#" data-aria="grade_info_12484818" aria-label="Закрыть сведения об оценке" class="screenreader-toggle pull-right">Закрыть</a>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <td>
+                        Средний:
+                        96 ,5
+                      </td>
+                      <td>
+                        Высокий:
+                        100
+                      </td>
+                      <td>
+                        Низкий:
+                        83 ,3
+                      </td>
+                      <td colspan="3">
+                        <div style="cursor: pointer; float: right; height: 30px; margin-left: 20px; width: 160px; position: relative; margin-right: 30px;" aria-hidden="true" title="Средний 96 ,5, высокий 100 ,0, низкий 83 ,3">
+                          <div class="grade-summary-graph-component" style="height: 10px; margin: 5px 0px; border-width: 2px; border-right-width: 0;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="width: 125px; height: 0px; margin-top: 10px; border-bottom-width: 2px;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 150px; width: 0px; height: 0px; margin-top: 10px; border-bottom-width: 2px;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 125px; width: 20px; height: 20px; border-width: 2px; border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-right-width: 0; background: #fff;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 145px; width: 5px; height: 20px; border-width: 2px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; background: #fff;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 153px; height: 10px; margin: 5px 0px; border-width: 2px; border-left-width: 0;">&nbsp;</div>
+                            <div class="grade-summary-graph-component" style="top: 5px; height: 10px; width: 10px; left: 145px; border: 2px solid #248; background: #abd; border-radius: 3px;" title="Ваш результат:
+                              100 ,0 из 100">&nbsp;
+                            </div>
+                        </div>
+                      </td>
+                  </tr>
+                </tbody>
+              </table>
+          </tr>
+      <tr id="comments_thread_12484818" class="comments comments_thread assignment_graded" style="display: none;">
+        <td colspan="6">
+        </td>
+      </tr>
+      <tr id="rubric_12484818" class="rubric_assessments assignment_graded" style="display: none;">
+      </tr>
+    <tr class="student_assignment assignment_graded editable"
+        data-muted="false"
+        id="submission_12484819"
+        >
+
+        <th class="title" scope="row">
+            <a href="#" class="copy" id="copy_practice">Глава 6. Оценка практических навыков в Packet Tracer</a>
+            <div class="context">Экзамены по главам</div>
+        </td>
+        <td class="due">
+            5 Окт по 23:59
+        </td>
+
+
+        <td class="assignment_score" title="Щелкните для проверки другой оценки">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+                  tabindex="0"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Щелкните для проверки другой оценки
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    Щелкните для проверки другой оценки
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                96.2
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                96 ,2 
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                96 ,2 
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                graded
+              </span>
+              <span class="assignment_group_id">4040913</span>
+              <span class="assignment_id">12484819</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          100
+        </td>
+        <td class="details">
+          <a href="#"
+              class="toggle_final_grade_info tooltip"
+              aria-label="Это задание не засчитывается для итоговой оценки."
+                aria-hidden='true'
+                role='presentation'
+                tabindex='-1'
+                style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">Информация по оценке</span>
+            </span>
+            <i class="icon-warning standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_comments_link tooltip"
+            aria-label="Прочитать комментарии"
+            aria-describedby="comment_count_for_assignment_12484819"
+              aria-hidden='true'
+              role='presentation'
+              tabindex='-1'
+              style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text" id="comment_count_for_assignment_12484819">
+                0 комментариев
+              </span>
+            </span>
+            <i class="icon-discussion standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_score_details_link tooltip"
+            aria-label="См. сведения об оценке"
+            aria-expanded="false"
+            aria-controls="grade_info_12484819"
+          >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. сведения об оценке</span>
+            </span>
+            <!-- <i class="icon-check-plus standalone-icon"></i> -->
+          </a>
+          <a href="#"
+            class="toggle_rubric_assessments_link tooltip"
+            aria-label="См. результаты рубрики"
+            aria-expanded='false'
+            aria-controls="rubric_12484819"
+            tabindex='0'
+            style="visibility: hidden;">
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. результаты рубрики</span>
+            </span>
+            <i class="icon-rubric"></i>
+          </a>
+        </td>
+      </tr>
+      <tr id="final_grade_info_12484819"
+          class="comments assignment_graded"
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_12484819" class="comments grade_details assignment_graded" style="display: none;">
+          <td colspan="6" style="padding-bottom: 20px;">
+              <table id="score_details_12484819" class="ic-Table ic-Table--condensed score_details_table">
+                <thead>
+                  <tr>
+                    <th colspan="5">
+                      Сведения об оценке
+                    </th>
+                    <th>
+                      <a href="#" data-aria="grade_info_12484819" aria-label="Закрыть сведения об оценке" class="screenreader-toggle pull-right">Закрыть</a>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <td>
+                        Средний:
+                        93 ,7
+                      </td>
+                      <td>
+                        Высокий:
+                        100
+                      </td>
+                      <td>
+                        Низкий:
+                        79 ,2
+                      </td>
+                      <td colspan="3">
+                        <div style="cursor: pointer; float: right; height: 30px; margin-left: 20px; width: 160px; position: relative; margin-right: 30px;" aria-hidden="true" title="Средний 93 ,7, высокий 100 ,0, низкий 79 ,2">
+                          <div class="grade-summary-graph-component" style="height: 10px; margin: 5px 0px; border-width: 2px; border-right-width: 0;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="width: 119px; height: 0px; margin-top: 10px; border-bottom-width: 2px;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 150px; width: 0px; height: 0px; margin-top: 10px; border-bottom-width: 2px;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 119px; width: 22px; height: 20px; border-width: 2px; border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-right-width: 0; background: #fff;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 141px; width: 9px; height: 20px; border-width: 2px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; background: #fff;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 153px; height: 10px; margin: 5px 0px; border-width: 2px; border-left-width: 0;">&nbsp;</div>
+                            <div class="grade-summary-graph-component" style="top: 5px; height: 10px; width: 10px; left: 139px; border: 2px solid #248; background: #abd; border-radius: 3px;" title="Ваш результат:
+                              96 ,2 из 100">&nbsp;
+                            </div>
+                        </div>
+                      </td>
+                  </tr>
+                </tbody>
+              </table>
+          </tr>
+      <tr id="comments_thread_12484819" class="comments comments_thread assignment_graded" style="display: none;">
+        <td colspan="6">
+        </td>
+      </tr>
+      <tr id="rubric_12484819" class="rubric_assessments assignment_graded" style="display: none;">
+      </tr>
+    <tr class="student_assignment assignment_graded editable"
+        data-muted="false"
+        id="submission_12484807"
+        >
+
+        <th class="title" scope="row">
+            <a href="#" class="copy" id="copy_7">Экзамен по главе 7</a>
+            <div class="context">Экзамены по главам</div>
+        </td>
+        <td class="due">
+            5 Окт по 23:59
+        </td>
+
+
+        <td class="assignment_score" title="Щелкните для проверки другой оценки">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+                  tabindex="0"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Щелкните для проверки другой оценки
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    Щелкните для проверки другой оценки
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                80.0
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                80 
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                80 
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                graded
+              </span>
+              <span class="assignment_group_id">4040913</span>
+              <span class="assignment_id">12484807</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          100
+        </td>
+        <td class="details">
+          <a href="#"
+              class="toggle_final_grade_info tooltip"
+              aria-label="Это задание не засчитывается для итоговой оценки."
+                aria-hidden='true'
+                role='presentation'
+                tabindex='-1'
+                style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">Информация по оценке</span>
+            </span>
+            <i class="icon-warning standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_comments_link tooltip"
+            aria-label="Прочитать комментарии"
+            aria-describedby="comment_count_for_assignment_12484807"
+              aria-hidden='true'
+              role='presentation'
+              tabindex='-1'
+              style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text" id="comment_count_for_assignment_12484807">
+                0 комментариев
+              </span>
+            </span>
+            <i class="icon-discussion standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_score_details_link tooltip"
+            aria-label="См. сведения об оценке"
+            aria-expanded="false"
+            aria-controls="grade_info_12484807"
+          >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. сведения об оценке</span>
+            </span>
+            <!-- <i class="icon-check-plus standalone-icon"></i> -->
+          </a>
+          <a href="#"
+            class="toggle_rubric_assessments_link tooltip"
+            aria-label="См. результаты рубрики"
+            aria-expanded='false'
+            aria-controls="rubric_12484807"
+            tabindex='0'
+            style="visibility: hidden;">
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. результаты рубрики</span>
+            </span>
+            <i class="icon-rubric"></i>
+          </a>
+        </td>
+      </tr>
+      <tr id="final_grade_info_12484807"
+          class="comments assignment_graded"
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_12484807" class="comments grade_details assignment_graded" style="display: none;">
+          <td colspan="6" style="padding-bottom: 20px;">
+              <table id="score_details_12484807" class="ic-Table ic-Table--condensed score_details_table">
+                <thead>
+                  <tr>
+                    <th colspan="5">
+                      Сведения об оценке
+                    </th>
+                    <th>
+                      <a href="#" data-aria="grade_info_12484807" aria-label="Закрыть сведения об оценке" class="screenreader-toggle pull-right">Закрыть</a>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <td>
+                        Средний:
+                        72 ,9
+                      </td>
+                      <td>
+                        Высокий:
+                        100
+                      </td>
+                      <td>
+                        Низкий:
+                        17
+                      </td>
+                      <td colspan="3">
+                        <div style="cursor: pointer; float: right; height: 30px; margin-left: 20px; width: 160px; position: relative; margin-right: 30px;" aria-hidden="true" title="Средний 72 ,9, высокий 100 ,0, низкий 17 ,0">
+                          <div class="grade-summary-graph-component" style="height: 10px; margin: 5px 0px; border-width: 2px; border-right-width: 0;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="width: 26px; height: 0px; margin-top: 10px; border-bottom-width: 2px;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 150px; width: 0px; height: 0px; margin-top: 10px; border-bottom-width: 2px;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 26px; width: 84px; height: 20px; border-width: 2px; border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-right-width: 0; background: #fff;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 109px; width: 41px; height: 20px; border-width: 2px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; background: #fff;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 153px; height: 10px; margin: 5px 0px; border-width: 2px; border-left-width: 0;">&nbsp;</div>
+                            <div class="grade-summary-graph-component" style="top: 5px; height: 10px; width: 10px; left: 115px; border: 2px solid #248; background: #abd; border-radius: 3px;" title="Ваш результат:
+                              80 ,0 из 100">&nbsp;
+                            </div>
+                        </div>
+                      </td>
+                  </tr>
+                </tbody>
+              </table>
+          </tr>
+      <tr id="comments_thread_12484807" class="comments comments_thread assignment_graded" style="display: none;">
+        <td colspan="6">
+        </td>
+      </tr>
+      <tr id="rubric_12484807" class="rubric_assessments assignment_graded" style="display: none;">
+      </tr>
+    <tr class="student_assignment assignment_graded editable"
+        data-muted="false"
+        id="submission_12484820"
+        >
+
+        <th class="title" scope="row">
+            <a href="#" class="copy" id="copy_8">Экзамен по главе 8</a>
+            <div class="context">Экзамены по главам</div>
+        </td>
+        <td class="due">
+            12 Окт по 23:59
+        </td>
+
+
+        <td class="assignment_score" title="Щелкните для проверки другой оценки">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+                  tabindex="0"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Щелкните для проверки другой оценки
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    Щелкните для проверки другой оценки
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                96.0
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                96 
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                96 
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                graded
+              </span>
+              <span class="assignment_group_id">4040913</span>
+              <span class="assignment_id">12484820</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          100
+        </td>
+        <td class="details">
+          <a href="#"
+              class="toggle_final_grade_info tooltip"
+              aria-label="Это задание не засчитывается для итоговой оценки."
+                aria-hidden='true'
+                role='presentation'
+                tabindex='-1'
+                style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">Информация по оценке</span>
+            </span>
+            <i class="icon-warning standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_comments_link tooltip"
+            aria-label="Прочитать комментарии"
+            aria-describedby="comment_count_for_assignment_12484820"
+              aria-hidden='true'
+              role='presentation'
+              tabindex='-1'
+              style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text" id="comment_count_for_assignment_12484820">
+                0 комментариев
+              </span>
+            </span>
+            <i class="icon-discussion standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_score_details_link tooltip"
+            aria-label="См. сведения об оценке"
+            aria-expanded="false"
+            aria-controls="grade_info_12484820"
+          >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. сведения об оценке</span>
+            </span>
+            <!-- <i class="icon-check-plus standalone-icon"></i> -->
+          </a>
+          <a href="#"
+            class="toggle_rubric_assessments_link tooltip"
+            aria-label="См. результаты рубрики"
+            aria-expanded='false'
+            aria-controls="rubric_12484820"
+            tabindex='0'
+            style="visibility: hidden;">
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. результаты рубрики</span>
+            </span>
+            <i class="icon-rubric"></i>
+          </a>
+        </td>
+      </tr>
+      <tr id="final_grade_info_12484820"
+          class="comments assignment_graded"
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_12484820" class="comments grade_details assignment_graded" style="display: none;">
+          <td colspan="6" style="padding-bottom: 20px;">
+              <table id="score_details_12484820" class="ic-Table ic-Table--condensed score_details_table">
+                <thead>
+                  <tr>
+                    <th colspan="5">
+                      Сведения об оценке
+                    </th>
+                    <th>
+                      <a href="#" data-aria="grade_info_12484820" aria-label="Закрыть сведения об оценке" class="screenreader-toggle pull-right">Закрыть</a>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <td>
+                        Средний:
+                        95 ,8
+                      </td>
+                      <td>
+                        Высокий:
+                        100
+                      </td>
+                      <td>
+                        Низкий:
+                        90
+                      </td>
+                      <td colspan="3">
+                        <div style="cursor: pointer; float: right; height: 30px; margin-left: 20px; width: 160px; position: relative; margin-right: 30px;" aria-hidden="true" title="Средний 95 ,8, высокий 100 ,0, низкий 90 ,0">
+                          <div class="grade-summary-graph-component" style="height: 10px; margin: 5px 0px; border-width: 2px; border-right-width: 0;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="width: 135px; height: 0px; margin-top: 10px; border-bottom-width: 2px;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 150px; width: 0px; height: 0px; margin-top: 10px; border-bottom-width: 2px;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 135px; width: 9px; height: 20px; border-width: 2px; border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-right-width: 0; background: #fff;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 144px; width: 6px; height: 20px; border-width: 2px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; background: #fff;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 153px; height: 10px; margin: 5px 0px; border-width: 2px; border-left-width: 0;">&nbsp;</div>
+                            <div class="grade-summary-graph-component" style="top: 5px; height: 10px; width: 10px; left: 139px; border: 2px solid #248; background: #abd; border-radius: 3px;" title="Ваш результат:
+                              96 ,0 из 100">&nbsp;
+                            </div>
+                        </div>
+                      </td>
+                  </tr>
+                </tbody>
+              </table>
+          </tr>
+      <tr id="comments_thread_12484820" class="comments comments_thread assignment_graded" style="display: none;">
+        <td colspan="6">
+        </td>
+      </tr>
+      <tr id="rubric_12484820" class="rubric_assessments assignment_graded" style="display: none;">
+      </tr>
+    <tr class="student_assignment assignment_graded editable"
+        data-muted="false"
+        id="submission_12484821"
+        >
+
+        <th class="title" scope="row">
+            <a href="#" class="copy" id="copy_9">Экзамен по главе 9</a>
+            <div class="context">Экзамены по главам</div>
+        </td>
+        <td class="due">
+            12 Окт по 23:59
+        </td>
+
+
+        <td class="assignment_score" title="Щелкните для проверки другой оценки">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+                  tabindex="0"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Щелкните для проверки другой оценки
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    Щелкните для проверки другой оценки
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                90.9
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                90 ,9 
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                90 ,9 
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                graded
+              </span>
+              <span class="assignment_group_id">4040913</span>
+              <span class="assignment_id">12484821</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          100
+        </td>
+        <td class="details">
+          <a href="#"
+              class="toggle_final_grade_info tooltip"
+              aria-label="Это задание не засчитывается для итоговой оценки."
+                aria-hidden='true'
+                role='presentation'
+                tabindex='-1'
+                style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">Информация по оценке</span>
+            </span>
+            <i class="icon-warning standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_comments_link tooltip"
+            aria-label="Прочитать комментарии"
+            aria-describedby="comment_count_for_assignment_12484821"
+              aria-hidden='true'
+              role='presentation'
+              tabindex='-1'
+              style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text" id="comment_count_for_assignment_12484821">
+                0 комментариев
+              </span>
+            </span>
+            <i class="icon-discussion standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_score_details_link tooltip"
+            aria-label="См. сведения об оценке"
+            aria-expanded="false"
+            aria-controls="grade_info_12484821"
+          >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. сведения об оценке</span>
+            </span>
+            <!-- <i class="icon-check-plus standalone-icon"></i> -->
+          </a>
+          <a href="#"
+            class="toggle_rubric_assessments_link tooltip"
+            aria-label="См. результаты рубрики"
+            aria-expanded='false'
+            aria-controls="rubric_12484821"
+            tabindex='0'
+            style="visibility: hidden;">
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. результаты рубрики</span>
+            </span>
+            <i class="icon-rubric"></i>
+          </a>
+        </td>
+      </tr>
+      <tr id="final_grade_info_12484821"
+          class="comments assignment_graded"
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_12484821" class="comments grade_details assignment_graded" style="display: none;">
+          <td colspan="6" style="padding-bottom: 20px;">
+              <table id="score_details_12484821" class="ic-Table ic-Table--condensed score_details_table">
+                <thead>
+                  <tr>
+                    <th colspan="5">
+                      Сведения об оценке
+                    </th>
+                    <th>
+                      <a href="#" data-aria="grade_info_12484821" aria-label="Закрыть сведения об оценке" class="screenreader-toggle pull-right">Закрыть</a>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <td>
+                        Средний:
+                        92 ,8
+                      </td>
+                      <td>
+                        Высокий:
+                        100
+                      </td>
+                      <td>
+                        Низкий:
+                        68 ,2
+                      </td>
+                      <td colspan="3">
+                        <div style="cursor: pointer; float: right; height: 30px; margin-left: 20px; width: 160px; position: relative; margin-right: 30px;" aria-hidden="true" title="Средний 92 ,8, высокий 100 ,0, низкий 68 ,2">
+                          <div class="grade-summary-graph-component" style="height: 10px; margin: 5px 0px; border-width: 2px; border-right-width: 0;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="width: 102px; height: 0px; margin-top: 10px; border-bottom-width: 2px;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 150px; width: 0px; height: 0px; margin-top: 10px; border-bottom-width: 2px;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 102px; width: 37px; height: 20px; border-width: 2px; border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-right-width: 0; background: #fff;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 139px; width: 11px; height: 20px; border-width: 2px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; background: #fff;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 153px; height: 10px; margin: 5px 0px; border-width: 2px; border-left-width: 0;">&nbsp;</div>
+                            <div class="grade-summary-graph-component" style="top: 5px; height: 10px; width: 10px; left: 131px; border: 2px solid #248; background: #abd; border-radius: 3px;" title="Ваш результат:
+                              90 ,9 из 100">&nbsp;
+                            </div>
+                        </div>
+                      </td>
+                  </tr>
+                </tbody>
+              </table>
+          </tr>
+      <tr id="comments_thread_12484821" class="comments comments_thread assignment_graded" style="display: none;">
+        <td colspan="6">
+        </td>
+      </tr>
+      <tr id="rubric_12484821" class="rubric_assessments assignment_graded" style="display: none;">
+      </tr>
+    <tr class="student_assignment assignment_graded editable"
+        data-muted="false"
+        id="submission_12484822"
+        >
+
+        <th class="title" scope="row">
+            <a href="#" class="copy" id="copy_10">Экзамен по главе 10</a>
+            <div class="context">Экзамены по главам</div>
+        </td>
+        <td class="due">
+            19 Окт по 23:59
+        </td>
+
+
+        <td class="assignment_score" title="Щелкните для проверки другой оценки">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+                  tabindex="0"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Щелкните для проверки другой оценки
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    Щелкните для проверки другой оценки
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                100
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                100
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                100
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                graded
+              </span>
+              <span class="assignment_group_id">4040913</span>
+              <span class="assignment_id">12484822</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          100
+        </td>
+        <td class="details">
+          <a href="#"
+              class="toggle_final_grade_info tooltip"
+              aria-label="Это задание не засчитывается для итоговой оценки."
+                aria-hidden='true'
+                role='presentation'
+                tabindex='-1'
+                style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">Информация по оценке</span>
+            </span>
+            <i class="icon-warning standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_comments_link tooltip"
+            aria-label="Прочитать комментарии"
+            aria-describedby="comment_count_for_assignment_12484822"
+              aria-hidden='true'
+              role='presentation'
+              tabindex='-1'
+              style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text" id="comment_count_for_assignment_12484822">
+                0 комментариев
+              </span>
+            </span>
+            <i class="icon-discussion standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_score_details_link tooltip"
+            aria-label="См. сведения об оценке"
+            aria-expanded="false"
+            aria-controls="grade_info_12484822"
+          >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. сведения об оценке</span>
+            </span>
+            <!-- <i class="icon-check-plus standalone-icon"></i> -->
+          </a>
+          <a href="#"
+            class="toggle_rubric_assessments_link tooltip"
+            aria-label="См. результаты рубрики"
+            aria-expanded='false'
+            aria-controls="rubric_12484822"
+            tabindex='0'
+            style="visibility: hidden;">
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. результаты рубрики</span>
+            </span>
+            <i class="icon-rubric"></i>
+          </a>
+        </td>
+      </tr>
+      <tr id="final_grade_info_12484822"
+          class="comments assignment_graded"
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_12484822" class="comments grade_details assignment_graded" style="display: none;">
+          <td colspan="6" style="padding-bottom: 20px;">
+              <table id="score_details_12484822" class="ic-Table ic-Table--condensed score_details_table">
+                <thead>
+                  <tr>
+                    <th colspan="5">
+                      Сведения об оценке
+                    </th>
+                    <th>
+                      <a href="#" data-aria="grade_info_12484822" aria-label="Закрыть сведения об оценке" class="screenreader-toggle pull-right">Закрыть</a>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <td>
+                        Средний:
+                        9 ,4
+                      </td>
+                      <td>
+                        Высокий:
+                        10
+                      </td>
+                      <td>
+                        Низкий:
+                        6 ,7
+                      </td>
+                      <td colspan="3">
+                        <div style="cursor: pointer; float: right; height: 30px; margin-left: 20px; width: 160px; position: relative; margin-right: 30px;" aria-hidden="true" title="Средний 9 ,4, высокий 10 ,0, низкий 6 ,7">
+                          <div class="grade-summary-graph-component" style="height: 10px; margin: 5px 0px; border-width: 2px; border-right-width: 0;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="width: 101px; height: 0px; margin-top: 10px; border-bottom-width: 2px;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 150px; width: 0px; height: 0px; margin-top: 10px; border-bottom-width: 2px;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 101px; width: 41px; height: 20px; border-width: 2px; border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-right-width: 0; background: #fff;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 141px; width: 9px; height: 20px; border-width: 2px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; background: #fff;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 153px; height: 10px; margin: 5px 0px; border-width: 2px; border-left-width: 0;">&nbsp;</div>
+                            <div class="grade-summary-graph-component" style="top: 5px; height: 10px; width: 10px; left: 145px; border: 2px solid #248; background: #abd; border-radius: 3px;" title="Ваш результат:
+                              10 ,0 из 10">&nbsp;
+                            </div>
+                        </div>
+                      </td>
+                  </tr>
+                </tbody>
+              </table>
+          </tr>
+      <tr id="comments_thread_12484822" class="comments comments_thread assignment_graded" style="display: none;">
+        <td colspan="6">
+        </td>
+      </tr>
+      <tr id="rubric_12484822" class="rubric_assessments assignment_graded" style="display: none;">
+      </tr>
+    <tr class="student_assignment assignment_graded editable"
+        data-muted="false"
+        id="submission_12484814"
+        >
+
+        <th class="title" scope="row">
+            <a href="#" class="copy" id="copy_11">Экзамен по главе 11</a>
+            <div class="context">Экзамены по главам</div>
+        </td>
+        <td class="due">
+            19 Окт по 23:59
+        </td>
+
+
+        <td class="assignment_score" title="Щелкните для проверки другой оценки">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+                  tabindex="0"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Щелкните для проверки другой оценки
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    Щелкните для проверки другой оценки
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                96.3
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                96 ,3 
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                96 ,3 
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                graded
+              </span>
+              <span class="assignment_group_id">4040913</span>
+              <span class="assignment_id">12484814</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          100
+        </td>
+        <td class="details">
+          <a href="#"
+              class="toggle_final_grade_info tooltip"
+              aria-label="Это задание не засчитывается для итоговой оценки."
+                aria-hidden='true'
+                role='presentation'
+                tabindex='-1'
+                style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">Информация по оценке</span>
+            </span>
+            <i class="icon-warning standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_comments_link tooltip"
+            aria-label="Прочитать комментарии"
+            aria-describedby="comment_count_for_assignment_12484814"
+              aria-hidden='true'
+              role='presentation'
+              tabindex='-1'
+              style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text" id="comment_count_for_assignment_12484814">
+                0 комментариев
+              </span>
+            </span>
+            <i class="icon-discussion standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_score_details_link tooltip"
+            aria-label="См. сведения об оценке"
+            aria-expanded="false"
+            aria-controls="grade_info_12484814"
+          >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. сведения об оценке</span>
+            </span>
+            <!-- <i class="icon-check-plus standalone-icon"></i> -->
+          </a>
+          <a href="#"
+            class="toggle_rubric_assessments_link tooltip"
+            aria-label="См. результаты рубрики"
+            aria-expanded='false'
+            aria-controls="rubric_12484814"
+            tabindex='0'
+            style="visibility: hidden;">
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. результаты рубрики</span>
+            </span>
+            <i class="icon-rubric"></i>
+          </a>
+        </td>
+      </tr>
+      <tr id="final_grade_info_12484814"
+          class="comments assignment_graded"
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_12484814" class="comments grade_details assignment_graded" style="display: none;">
+          <td colspan="6" style="padding-bottom: 20px;">
+              <table id="score_details_12484814" class="ic-Table ic-Table--condensed score_details_table">
+                <thead>
+                  <tr>
+                    <th colspan="5">
+                      Сведения об оценке
+                    </th>
+                    <th>
+                      <a href="#" data-aria="grade_info_12484814" aria-label="Закрыть сведения об оценке" class="screenreader-toggle pull-right">Закрыть</a>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <td>
+                        Средний:
+                        98 ,7
+                      </td>
+                      <td>
+                        Высокий:
+                        100
+                      </td>
+                      <td>
+                        Низкий:
+                        92 ,6
+                      </td>
+                      <td colspan="3">
+                        <div style="cursor: pointer; float: right; height: 30px; margin-left: 20px; width: 160px; position: relative; margin-right: 30px;" aria-hidden="true" title="Средний 98 ,7, высокий 100 ,0, низкий 92 ,6">
+                          <div class="grade-summary-graph-component" style="height: 10px; margin: 5px 0px; border-width: 2px; border-right-width: 0;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="width: 139px; height: 0px; margin-top: 10px; border-bottom-width: 2px;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 150px; width: 0px; height: 0px; margin-top: 10px; border-bottom-width: 2px;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 139px; width: 9px; height: 20px; border-width: 2px; border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-right-width: 0; background: #fff;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 148px; width: 2px; height: 20px; border-width: 2px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; background: #fff;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 153px; height: 10px; margin: 5px 0px; border-width: 2px; border-left-width: 0;">&nbsp;</div>
+                            <div class="grade-summary-graph-component" style="top: 5px; height: 10px; width: 10px; left: 139px; border: 2px solid #248; background: #abd; border-radius: 3px;" title="Ваш результат:
+                              96 ,3 из 100">&nbsp;
+                            </div>
+                        </div>
+                      </td>
+                  </tr>
+                </tbody>
+              </table>
+          </tr>
+      <tr id="comments_thread_12484814" class="comments comments_thread assignment_graded" style="display: none;">
+        <td colspan="6">
+        </td>
+      </tr>
+      <tr id="rubric_12484814" class="rubric_assessments assignment_graded" style="display: none;">
+      </tr>
+    <tr class="student_assignment editable"
+        data-muted="false"
+        id="submission_12484801"
+        >
+
+        <th class="title" scope="row">
+            <a href="#" class="copy" id="copy_final">Final Exam - Итоговый экзамен</a>
+            <div class="context">Итоговый экзамен</div>
+        </td>
+        <td class="due">
+            26 Окт по 23:59
+        </td>
+
+
+        <td class="assignment_score" title="Щелкните для проверки другой оценки">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+                  tabindex="0"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Щелкните для проверки другой оценки
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    Щелкните для проверки другой оценки
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                 
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                 
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                unsubmitted
+              </span>
+              <span class="assignment_group_id">4040916</span>
+              <span class="assignment_id">12484801</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          100
+        </td>
+        <td class="details">
+          <a href="#"
+              class="toggle_final_grade_info tooltip"
+              aria-label="Это задание не засчитывается для итоговой оценки."
+                aria-hidden='true'
+                role='presentation'
+                tabindex='-1'
+                style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">Информация по оценке</span>
+            </span>
+            <i class="icon-warning standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_comments_link tooltip"
+            aria-label="Прочитать комментарии"
+            aria-describedby="comment_count_for_assignment_12484801"
+              aria-hidden='true'
+              role='presentation'
+              tabindex='-1'
+              style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text" id="comment_count_for_assignment_12484801">
+                0 комментариев
+              </span>
+            </span>
+            <i class="icon-discussion standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_score_details_link tooltip"
+            aria-label="См. сведения об оценке"
+            aria-hidden='true'
+            role='presentation'
+            tabindex='-1'
+            style='visibility: hidden;'
+          >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. сведения об оценке</span>
+            </span>
+            <!-- <i class="icon-check-plus standalone-icon"></i> -->
+          </a>
+          <a href="#"
+            class="toggle_rubric_assessments_link tooltip"
+            aria-label="См. результаты рубрики"
+            aria-expanded='false'
+            aria-controls="rubric_12484801"
+            tabindex='0'
+            style="visibility: hidden;">
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. результаты рубрики</span>
+            </span>
+            <i class="icon-rubric"></i>
+          </a>
+        </td>
+      </tr>
+      <tr id="final_grade_info_12484801"
+          class="comments "
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_12484801" class="comments grade_details " style="display: none;">
+        </td>
+      </tr>
+      <tr id="rubric_12484801" class="rubric_assessments " style="display: none;">
+      </tr>
+    <tr class="student_assignment editable"
+        data-muted="false"
+        id="submission_12484804"
+        >
+
+        <th class="title" scope="row">
+            <a href="/courses/623443/assignments/12484804/submissions/5754792">RSE. Оценка практических навыков. Часть 1. PT</a>
+            <div class="context">Практические экзамены</div>
+        </td>
+        <td class="due">
+            26 Окт по 23:59
+        </td>
+
+
+        <td class="assignment_score" title="Щелкните для проверки другой оценки">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+                  tabindex="0"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Щелкните для проверки другой оценки
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    Щелкните для проверки другой оценки
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                 
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                 
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                unsubmitted
+              </span>
+              <span class="assignment_group_id">4040914</span>
+              <span class="assignment_id">12484804</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          100
+        </td>
+        <td class="details">
+          <a href="#"
+              class="toggle_final_grade_info tooltip"
+              aria-label="Это задание не засчитывается для итоговой оценки."
+                aria-hidden='true'
+                role='presentation'
+                tabindex='-1'
+                style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">Информация по оценке</span>
+            </span>
+            <i class="icon-warning standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_comments_link tooltip"
+            aria-label="Прочитать комментарии"
+            aria-describedby="comment_count_for_assignment_12484804"
+              aria-hidden='true'
+              role='presentation'
+              tabindex='-1'
+              style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text" id="comment_count_for_assignment_12484804">
+                0 комментариев
+              </span>
+            </span>
+            <i class="icon-discussion standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_score_details_link tooltip"
+            aria-label="См. сведения об оценке"
+            aria-hidden='true'
+            role='presentation'
+            tabindex='-1'
+            style='visibility: hidden;'
+          >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. сведения об оценке</span>
+            </span>
+            <!-- <i class="icon-check-plus standalone-icon"></i> -->
+          </a>
+          <a href="#"
+            class="toggle_rubric_assessments_link tooltip"
+            aria-label="См. результаты рубрики"
+            aria-expanded='false'
+            aria-controls="rubric_12484804"
+            tabindex='0'
+            style="visibility: hidden;">
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. результаты рубрики</span>
+            </span>
+            <i class="icon-rubric"></i>
+          </a>
+        </td>
+      </tr>
+      <tr id="final_grade_info_12484804"
+          class="comments "
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_12484804" class="comments grade_details " style="display: none;">
+        </td>
+      </tr>
+      <tr id="rubric_12484804" class="rubric_assessments " style="display: none;">
+      </tr>
+    <tr class="student_assignment editable"
+        data-muted="false"
+        id="submission_12484808"
+        >
+
+        <th class="title" scope="row">
+            <a href="/courses/623443/assignments/12484808/submissions/5754792">Отзыв о курсе</a>
+            <div class="context"> Успеваемость учащегося</div>
+        </td>
+        <td class="due">
+            
+        </td>
+
+
+        <td class="assignment_score" title="Щелкните для проверки другой оценки">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+                  tabindex="0"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Щелкните для проверки другой оценки
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    Щелкните для проверки другой оценки
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                 
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                 
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                unsubmitted
+              </span>
+              <span class="assignment_group_id">4040917</span>
+              <span class="assignment_id">12484808</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          100
+        </td>
+        <td class="details">
+          <a href="#"
+              class="toggle_final_grade_info tooltip"
+              aria-label="Это задание не засчитывается для итоговой оценки."
+                aria-hidden='true'
+                role='presentation'
+                tabindex='-1'
+                style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">Информация по оценке</span>
+            </span>
+            <i class="icon-warning standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_comments_link tooltip"
+            aria-label="Прочитать комментарии"
+            aria-describedby="comment_count_for_assignment_12484808"
+              aria-hidden='true'
+              role='presentation'
+              tabindex='-1'
+              style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text" id="comment_count_for_assignment_12484808">
+                0 комментариев
+              </span>
+            </span>
+            <i class="icon-discussion standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_score_details_link tooltip"
+            aria-label="См. сведения об оценке"
+            aria-hidden='true'
+            role='presentation'
+            tabindex='-1'
+            style='visibility: hidden;'
+          >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. сведения об оценке</span>
+            </span>
+            <!-- <i class="icon-check-plus standalone-icon"></i> -->
+          </a>
+          <a href="#"
+            class="toggle_rubric_assessments_link tooltip"
+            aria-label="См. результаты рубрики"
+            aria-expanded='false'
+            aria-controls="rubric_12484808"
+            tabindex='0'
+            style="visibility: hidden;">
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. результаты рубрики</span>
+            </span>
+            <i class="icon-rubric"></i>
+          </a>
+        </td>
+      </tr>
+      <tr id="final_grade_info_12484808"
+          class="comments "
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_12484808" class="comments grade_details " style="display: none;">
+        </td>
+      </tr>
+      <tr id="rubric_12484808" class="rubric_assessments " style="display: none;">
+      </tr>
+    <tr class="student_assignment editable"
+        data-muted="false"
+        id="submission_12484809"
+        >
+
+        <th class="title" scope="row">
+            <a href="/courses/623443/assignments/12484809/submissions/5754792">Практический выпускной экзамен</a>
+            <div class="context">Практический выпускной экзамен</div>
+        </td>
+        <td class="due">
+            
+        </td>
+
+
+        <td class="assignment_score" title="Щелкните для проверки другой оценки">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+                  tabindex="0"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Щелкните для проверки другой оценки
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    Щелкните для проверки другой оценки
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                 
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                 
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                unsubmitted
+              </span>
+              <span class="assignment_group_id">4040915</span>
+              <span class="assignment_id">12484809</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          100
+        </td>
+        <td class="details">
+          <a href="#"
+              class="toggle_final_grade_info tooltip"
+              aria-label="Это задание не засчитывается для итоговой оценки."
+                aria-hidden='true'
+                role='presentation'
+                tabindex='-1'
+                style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">Информация по оценке</span>
+            </span>
+            <i class="icon-warning standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_comments_link tooltip"
+            aria-label="Прочитать комментарии"
+            aria-describedby="comment_count_for_assignment_12484809"
+              aria-hidden='true'
+              role='presentation'
+              tabindex='-1'
+              style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text" id="comment_count_for_assignment_12484809">
+                0 комментариев
+              </span>
+            </span>
+            <i class="icon-discussion standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_score_details_link tooltip"
+            aria-label="См. сведения об оценке"
+            aria-hidden='true'
+            role='presentation'
+            tabindex='-1'
+            style='visibility: hidden;'
+          >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. сведения об оценке</span>
+            </span>
+            <!-- <i class="icon-check-plus standalone-icon"></i> -->
+          </a>
+          <a href="#"
+            class="toggle_rubric_assessments_link tooltip"
+            aria-label="См. результаты рубрики"
+            aria-expanded='false'
+            aria-controls="rubric_12484809"
+            tabindex='0'
+            style="visibility: hidden;">
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. результаты рубрики</span>
+            </span>
+            <i class="icon-rubric"></i>
+          </a>
+        </td>
+      </tr>
+      <tr id="final_grade_info_12484809"
+          class="comments "
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_12484809" class="comments grade_details " style="display: none;">
+        </td>
+      </tr>
+      <tr id="rubric_12484809" class="rubric_assessments " style="display: none;">
+      </tr>
+    <tr class="student_assignment editable"
+        data-muted="false"
+        id="submission_12484810"
+        >
+
+        <th class="title" scope="row">
+            <a href="/courses/623443/assignments/12484810/submissions/5754792">Практический сертификационный экзамен CCENT (ICND1)</a>
+            <div class="context">Практический выпускной экзамен</div>
+        </td>
+        <td class="due">
+            
+        </td>
+
+
+        <td class="assignment_score" title="Щелкните для проверки другой оценки">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+                  tabindex="0"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Щелкните для проверки другой оценки
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    Щелкните для проверки другой оценки
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                 
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                 
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                unsubmitted
+              </span>
+              <span class="assignment_group_id">4040915</span>
+              <span class="assignment_id">12484810</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          100
+        </td>
+        <td class="details">
+          <a href="#"
+              class="toggle_final_grade_info tooltip"
+              aria-label="Это задание не засчитывается для итоговой оценки."
+                aria-hidden='true'
+                role='presentation'
+                tabindex='-1'
+                style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">Информация по оценке</span>
+            </span>
+            <i class="icon-warning standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_comments_link tooltip"
+            aria-label="Прочитать комментарии"
+            aria-describedby="comment_count_for_assignment_12484810"
+              aria-hidden='true'
+              role='presentation'
+              tabindex='-1'
+              style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text" id="comment_count_for_assignment_12484810">
+                0 комментариев
+              </span>
+            </span>
+            <i class="icon-discussion standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_score_details_link tooltip"
+            aria-label="См. сведения об оценке"
+            aria-hidden='true'
+            role='presentation'
+            tabindex='-1'
+            style='visibility: hidden;'
+          >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. сведения об оценке</span>
+            </span>
+            <!-- <i class="icon-check-plus standalone-icon"></i> -->
+          </a>
+          <a href="#"
+            class="toggle_rubric_assessments_link tooltip"
+            aria-label="См. результаты рубрики"
+            aria-expanded='false'
+            aria-controls="rubric_12484810"
+            tabindex='0'
+            style="visibility: hidden;">
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. результаты рубрики</span>
+            </span>
+            <i class="icon-rubric"></i>
+          </a>
+        </td>
+      </tr>
+      <tr id="final_grade_info_12484810"
+          class="comments "
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_12484810" class="comments grade_details " style="display: none;">
+        </td>
+      </tr>
+      <tr id="rubric_12484810" class="rubric_assessments " style="display: none;">
+      </tr>
+    <tr class="student_assignment editable"
+        data-muted="false"
+        id="submission_12484811"
+        >
+
+        <th class="title" scope="row">
+            <a href="/courses/623443/assignments/12484811/submissions/5754792">Практический экзамен на владение навыками</a>
+            <div class="context">Практические экзамены</div>
+        </td>
+        <td class="due">
+            
+        </td>
+
+
+        <td class="assignment_score" title="Щелкните для проверки другой оценки">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+                  tabindex="0"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Щелкните для проверки другой оценки
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    Щелкните для проверки другой оценки
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                 
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                 
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                unsubmitted
+              </span>
+              <span class="assignment_group_id">4040914</span>
+              <span class="assignment_id">12484811</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          100
+        </td>
+        <td class="details">
+          <a href="#"
+              class="toggle_final_grade_info tooltip"
+              aria-label="Это задание не засчитывается для итоговой оценки."
+                aria-hidden='true'
+                role='presentation'
+                tabindex='-1'
+                style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">Информация по оценке</span>
+            </span>
+            <i class="icon-warning standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_comments_link tooltip"
+            aria-label="Прочитать комментарии"
+            aria-describedby="comment_count_for_assignment_12484811"
+              aria-hidden='true'
+              role='presentation'
+              tabindex='-1'
+              style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text" id="comment_count_for_assignment_12484811">
+                0 комментариев
+              </span>
+            </span>
+            <i class="icon-discussion standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_score_details_link tooltip"
+            aria-label="См. сведения об оценке"
+            aria-hidden='true'
+            role='presentation'
+            tabindex='-1'
+            style='visibility: hidden;'
+          >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. сведения об оценке</span>
+            </span>
+            <!-- <i class="icon-check-plus standalone-icon"></i> -->
+          </a>
+          <a href="#"
+            class="toggle_rubric_assessments_link tooltip"
+            aria-label="См. результаты рубрики"
+            aria-expanded='false'
+            aria-controls="rubric_12484811"
+            tabindex='0'
+            style="visibility: hidden;">
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. результаты рубрики</span>
+            </span>
+            <i class="icon-rubric"></i>
+          </a>
+        </td>
+      </tr>
+      <tr id="final_grade_info_12484811"
+          class="comments "
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_12484811" class="comments grade_details " style="display: none;">
+        </td>
+      </tr>
+      <tr id="rubric_12484811" class="rubric_assessments " style="display: none;">
+      </tr>
+    <tr class="student_assignment assignment_graded editable"
+        data-muted="false"
+        id="submission_12484812"
+        >
+
+        <th class="title" scope="row">
+            <a href="/courses/623443/assignments/12484812/submissions/5754792">Предварительный экзамен</a>
+            <div class="context">Предварительный экзамен</div>
+        </td>
+        <td class="due">
+            
+        </td>
+
+
+        <td class="assignment_score" title="Щелкните для проверки другой оценки">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+                  tabindex="0"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Щелкните для проверки другой оценки
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    Щелкните для проверки другой оценки
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                93.54
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                93 ,54 
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                93 ,54 
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                graded
+              </span>
+              <span class="assignment_group_id">4040912</span>
+              <span class="assignment_id">12484812</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          100
+        </td>
+        <td class="details">
+          <a href="#"
+              class="toggle_final_grade_info tooltip"
+              aria-label="Это задание не засчитывается для итоговой оценки."
+                aria-hidden='true'
+                role='presentation'
+                tabindex='-1'
+                style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">Информация по оценке</span>
+            </span>
+            <i class="icon-warning standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_comments_link tooltip"
+            aria-label="Прочитать комментарии"
+            aria-describedby="comment_count_for_assignment_12484812"
+              aria-hidden='true'
+              role='presentation'
+              tabindex='-1'
+              style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text" id="comment_count_for_assignment_12484812">
+                0 комментариев
+              </span>
+            </span>
+            <i class="icon-discussion standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_score_details_link tooltip"
+            aria-label="См. сведения об оценке"
+            aria-expanded="false"
+            aria-controls="grade_info_12484812"
+          >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. сведения об оценке</span>
+            </span>
+            <!-- <i class="icon-check-plus standalone-icon"></i> -->
+          </a>
+          <a href="#"
+            class="toggle_rubric_assessments_link tooltip"
+            aria-label="См. результаты рубрики"
+            aria-expanded='false'
+            aria-controls="rubric_12484812"
+            tabindex='0'
+            style="visibility: hidden;">
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. результаты рубрики</span>
+            </span>
+            <i class="icon-rubric"></i>
+          </a>
+        </td>
+      </tr>
+      <tr id="final_grade_info_12484812"
+          class="comments assignment_graded"
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_12484812" class="comments grade_details assignment_graded" style="display: none;">
+          <td colspan="6" style="padding-bottom: 20px;">
+              <table id="score_details_12484812" class="ic-Table ic-Table--condensed score_details_table">
+                <thead>
+                  <tr>
+                    <th colspan="5">
+                      Сведения об оценке
+                    </th>
+                    <th>
+                      <a href="#" data-aria="grade_info_12484812" aria-label="Закрыть сведения об оценке" class="screenreader-toggle pull-right">Закрыть</a>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <td>
+                        Средний:
+                        87 ,9
+                      </td>
+                      <td>
+                        Высокий:
+                        98 ,3
+                      </td>
+                      <td>
+                        Низкий:
+                        54 ,9
+                      </td>
+                      <td colspan="3">
+                        <div style="cursor: pointer; float: right; height: 30px; margin-left: 20px; width: 160px; position: relative; margin-right: 30px;" aria-hidden="true" title="Средний 87 ,9, высокий 98 ,3, низкий 54 ,9">
+                          <div class="grade-summary-graph-component" style="height: 10px; margin: 5px 0px; border-width: 2px; border-right-width: 0;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="width: 82px; height: 0px; margin-top: 10px; border-bottom-width: 2px;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 147px; width: 3px; height: 0px; margin-top: 10px; border-bottom-width: 2px;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 82px; width: 50px; height: 20px; border-width: 2px; border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-right-width: 0; background: #fff;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 132px; width: 16px; height: 20px; border-width: 2px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; background: #fff;">&nbsp;</div>
+                          <div class="grade-summary-graph-component" style="left: 150px; height: 10px; margin: 5px 0px; border-width: 2px; border-left-width: 0;">&nbsp;</div>
+                            <div class="grade-summary-graph-component" style="top: 5px; height: 10px; width: 10px; left: 135px; border: 2px solid #248; background: #abd; border-radius: 3px;" title="Ваш результат:
+                              - из 100">&nbsp;
+                            </div>
+                        </div>
+                      </td>
+                  </tr>
+                </tbody>
+              </table>
+          </tr>
+      <tr id="comments_thread_12484812" class="comments comments_thread assignment_graded" style="display: none;">
+        <td colspan="6">
+        </td>
+      </tr>
+      <tr id="rubric_12484812" class="rubric_assessments assignment_graded" style="display: none;">
+      </tr>
+    <tr class="student_assignment editable"
+        data-muted="false"
+        id="submission_12484802"
+        >
+
+        <th class="title" scope="row">
+            <a href="/courses/623443/assignments/12484802/submissions/5754792">Instructor Use Only - Порядок оценки преподавателем знаний учащихся</a>
+            <div class="context"> Успеваемость учащегося</div>
+        </td>
+        <td class="due">
+            
+        </td>
+
+
+        <td class="assignment_score" title="Щелкните для проверки другой оценки">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+                  tabindex="0"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Щелкните для проверки другой оценки
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    Щелкните для проверки другой оценки
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                 
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                 
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                unsubmitted
+              </span>
+              <span class="assignment_group_id">4040917</span>
+              <span class="assignment_id">12484802</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          100
+        </td>
+        <td class="details">
+          <a href="#"
+              class="toggle_final_grade_info tooltip"
+              aria-label="Это задание не засчитывается для итоговой оценки."
+                aria-hidden='true'
+                role='presentation'
+                tabindex='-1'
+                style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">Информация по оценке</span>
+            </span>
+            <i class="icon-warning standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_comments_link tooltip"
+            aria-label="Прочитать комментарии"
+            aria-describedby="comment_count_for_assignment_12484802"
+              aria-hidden='true'
+              role='presentation'
+              tabindex='-1'
+              style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text" id="comment_count_for_assignment_12484802">
+                0 комментариев
+              </span>
+            </span>
+            <i class="icon-discussion standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_score_details_link tooltip"
+            aria-label="См. сведения об оценке"
+            aria-hidden='true'
+            role='presentation'
+            tabindex='-1'
+            style='visibility: hidden;'
+          >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. сведения об оценке</span>
+            </span>
+            <!-- <i class="icon-check-plus standalone-icon"></i> -->
+          </a>
+          <a href="#"
+            class="toggle_rubric_assessments_link tooltip"
+            aria-label="См. результаты рубрики"
+            aria-expanded='false'
+            aria-controls="rubric_12484802"
+            tabindex='0'
+            style="visibility: hidden;">
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. результаты рубрики</span>
+            </span>
+            <i class="icon-rubric"></i>
+          </a>
+        </td>
+      </tr>
+      <tr id="final_grade_info_12484802"
+          class="comments "
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_12484802" class="comments grade_details " style="display: none;">
+        </td>
+      </tr>
+      <tr id="rubric_12484802" class="rubric_assessments " style="display: none;">
+      </tr>
+    <tr class="student_assignment editable"
+        data-muted="false"
+        id="submission_12484803"
+        >
+
+        <th class="title" scope="row">
+            <a href="/courses/623443/assignments/12484803/submissions/5754792">ITN. Проверка практических навыков. PT</a>
+            <div class="context">Практические экзамены</div>
+        </td>
+        <td class="due">
+            
+        </td>
+
+
+        <td class="assignment_score" title="Щелкните для проверки другой оценки">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+                  tabindex="0"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Щелкните для проверки другой оценки
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    Щелкните для проверки другой оценки
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                 
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                 
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                unsubmitted
+              </span>
+              <span class="assignment_group_id">4040914</span>
+              <span class="assignment_id">12484803</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          100
+        </td>
+        <td class="details">
+          <a href="#"
+              class="toggle_final_grade_info tooltip"
+              aria-label="Это задание не засчитывается для итоговой оценки."
+                aria-hidden='true'
+                role='presentation'
+                tabindex='-1'
+                style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">Информация по оценке</span>
+            </span>
+            <i class="icon-warning standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_comments_link tooltip"
+            aria-label="Прочитать комментарии"
+            aria-describedby="comment_count_for_assignment_12484803"
+              aria-hidden='true'
+              role='presentation'
+              tabindex='-1'
+              style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text" id="comment_count_for_assignment_12484803">
+                0 комментариев
+              </span>
+            </span>
+            <i class="icon-discussion standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_score_details_link tooltip"
+            aria-label="См. сведения об оценке"
+            aria-hidden='true'
+            role='presentation'
+            tabindex='-1'
+            style='visibility: hidden;'
+          >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. сведения об оценке</span>
+            </span>
+            <!-- <i class="icon-check-plus standalone-icon"></i> -->
+          </a>
+          <a href="#"
+            class="toggle_rubric_assessments_link tooltip"
+            aria-label="См. результаты рубрики"
+            aria-expanded='false'
+            aria-controls="rubric_12484803"
+            tabindex='0'
+            style="visibility: hidden;">
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. результаты рубрики</span>
+            </span>
+            <i class="icon-rubric"></i>
+          </a>
+        </td>
+      </tr>
+      <tr id="final_grade_info_12484803"
+          class="comments "
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_12484803" class="comments grade_details " style="display: none;">
+        </td>
+      </tr>
+      <tr id="rubric_12484803" class="rubric_assessments " style="display: none;">
+      </tr>
+    <tr class="student_assignment editable"
+        data-muted="false"
+        id="submission_12484805"
+        >
+
+        <th class="title" scope="row">
+            <a href="/courses/623443/assignments/12484805/submissions/5754792">RSE. Оценка практических навыков. Часть 2. PT</a>
+            <div class="context">Практические экзамены</div>
+        </td>
+        <td class="due">
+            
+        </td>
+
+
+        <td class="assignment_score" title="Щелкните для проверки другой оценки">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+                  tabindex="0"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Щелкните для проверки другой оценки
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    Щелкните для проверки другой оценки
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                 
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                 
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                unsubmitted
+              </span>
+              <span class="assignment_group_id">4040914</span>
+              <span class="assignment_id">12484805</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          100
+        </td>
+        <td class="details">
+          <a href="#"
+              class="toggle_final_grade_info tooltip"
+              aria-label="Это задание не засчитывается для итоговой оценки."
+                aria-hidden='true'
+                role='presentation'
+                tabindex='-1'
+                style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">Информация по оценке</span>
+            </span>
+            <i class="icon-warning standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_comments_link tooltip"
+            aria-label="Прочитать комментарии"
+            aria-describedby="comment_count_for_assignment_12484805"
+              aria-hidden='true'
+              role='presentation'
+              tabindex='-1'
+              style='visibility: hidden;'
+            >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text" id="comment_count_for_assignment_12484805">
+                0 комментариев
+              </span>
+            </span>
+            <i class="icon-discussion standalone-icon"></i>
+          </a>
+          <a href="#"
+            class="toggle_score_details_link tooltip"
+            aria-label="См. сведения об оценке"
+            aria-hidden='true'
+            role='presentation'
+            tabindex='-1'
+            style='visibility: hidden;'
+          >
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. сведения об оценке</span>
+            </span>
+            <!-- <i class="icon-check-plus standalone-icon"></i> -->
+          </a>
+          <a href="#"
+            class="toggle_rubric_assessments_link tooltip"
+            aria-label="См. результаты рубрики"
+            aria-expanded='false'
+            aria-controls="rubric_12484805"
+            tabindex='0'
+            style="visibility: hidden;">
+            <span class="tooltip_wrap right">
+              <span class="tooltip_text">См. результаты рубрики</span>
+            </span>
+            <i class="icon-rubric"></i>
+          </a>
+        </td>
+      </tr>
+      <tr id="final_grade_info_12484805"
+          class="comments "
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_12484805" class="comments grade_details " style="display: none;">
+        </td>
+      </tr>
+      <tr id="rubric_12484805" class="rubric_assessments " style="display: none;">
+      </tr>
+    <tr class="student_assignment hard_coded group_total"
+        data-muted=""
+        id="submission_group-4040904"
+        >
+
+        <th class="title" scope="row">
+            Assignments
+        </td>
+        <td class="due">
+        </td>
+
+
+        <td class="assignment_score" title="">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Всего
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                none
+              </span>
+              <span class="assignment_group_id">4040904</span>
+              <span class="assignment_id">group-4040904</span>
+              <span class="group_weight">0.0</span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          0% из всего
+        </td>
+        <td class="details">
+        </td>
+      </tr>
+      <tr id="final_grade_info_group-4040904"
+          class="comments "
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_group-4040904" class="comments grade_details " style="display: none;">
+        </td>
+      </tr>
+      <tr id="rubric_group-4040904" class="rubric_assessments " style="display: none;">
+      </tr>
+    <tr class="student_assignment hard_coded group_total"
+        data-muted=""
+        id="submission_group-4040912"
+        >
+
+        <th class="title" scope="row">
+            Предварительный экзамен
+        </td>
+        <td class="due">
+        </td>
+
+
+        <td class="assignment_score" title="">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Всего
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                none
+              </span>
+              <span class="assignment_group_id">4040912</span>
+              <span class="assignment_id">group-4040912</span>
+              <span class="group_weight">50.0</span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          50% из всего
+        </td>
+        <td class="details">
+        </td>
+      </tr>
+      <tr id="final_grade_info_group-4040912"
+          class="comments "
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_group-4040912" class="comments grade_details " style="display: none;">
+        </td>
+      </tr>
+      <tr id="rubric_group-4040912" class="rubric_assessments " style="display: none;">
+      </tr>
+    <tr class="student_assignment hard_coded group_total"
+        data-muted=""
+        id="submission_group-4040913"
+        >
+
+        <th class="title" scope="row">
+            Экзамены по главам
+        </td>
+        <td class="due">
+        </td>
+
+
+        <td class="assignment_score" title="">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Всего
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                none
+              </span>
+              <span class="assignment_group_id">4040913</span>
+              <span class="assignment_id">group-4040913</span>
+              <span class="group_weight">25.0</span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          25% из всего
+        </td>
+        <td class="details">
+        </td>
+      </tr>
+      <tr id="final_grade_info_group-4040913"
+          class="comments "
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_group-4040913" class="comments grade_details " style="display: none;">
+        </td>
+      </tr>
+      <tr id="rubric_group-4040913" class="rubric_assessments " style="display: none;">
+      </tr>
+    <tr class="student_assignment hard_coded group_total"
+        data-muted=""
+        id="submission_group-4040914"
+        >
+
+        <th class="title" scope="row">
+            Практические экзамены
+        </td>
+        <td class="due">
+        </td>
+
+
+        <td class="assignment_score" title="">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Всего
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                none
+              </span>
+              <span class="assignment_group_id">4040914</span>
+              <span class="assignment_id">group-4040914</span>
+              <span class="group_weight">12.5</span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          12 ,5% из всего
+        </td>
+        <td class="details">
+        </td>
+      </tr>
+      <tr id="final_grade_info_group-4040914"
+          class="comments "
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_group-4040914" class="comments grade_details " style="display: none;">
+        </td>
+      </tr>
+      <tr id="rubric_group-4040914" class="rubric_assessments " style="display: none;">
+      </tr>
+    <tr class="student_assignment hard_coded group_total"
+        data-muted=""
+        id="submission_group-4040915"
+        >
+
+        <th class="title" scope="row">
+            Практический выпускной экзамен
+        </td>
+        <td class="due">
+        </td>
+
+
+        <td class="assignment_score" title="">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Всего
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                none
+              </span>
+              <span class="assignment_group_id">4040915</span>
+              <span class="assignment_id">group-4040915</span>
+              <span class="group_weight">0.0</span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          0% из всего
+        </td>
+        <td class="details">
+        </td>
+      </tr>
+      <tr id="final_grade_info_group-4040915"
+          class="comments "
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_group-4040915" class="comments grade_details " style="display: none;">
+        </td>
+      </tr>
+      <tr id="rubric_group-4040915" class="rubric_assessments " style="display: none;">
+      </tr>
+    <tr class="student_assignment hard_coded group_total"
+        data-muted=""
+        id="submission_group-4040916"
+        >
+
+        <th class="title" scope="row">
+            Итоговый экзамен
+        </td>
+        <td class="due">
+        </td>
+
+
+        <td class="assignment_score" title="">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Всего
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                none
+              </span>
+              <span class="assignment_group_id">4040916</span>
+              <span class="assignment_id">group-4040916</span>
+              <span class="group_weight">12.5</span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          12 ,5% из всего
+        </td>
+        <td class="details">
+        </td>
+      </tr>
+      <tr id="final_grade_info_group-4040916"
+          class="comments "
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_group-4040916" class="comments grade_details " style="display: none;">
+        </td>
+      </tr>
+      <tr id="rubric_group-4040916" class="rubric_assessments " style="display: none;">
+      </tr>
+    <tr class="student_assignment hard_coded group_total"
+        data-muted=""
+        id="submission_group-4040917"
+        >
+
+        <th class="title" scope="row">
+             Успеваемость учащегося
+        </td>
+        <td class="due">
+        </td>
+
+
+        <td class="assignment_score" title="">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Всего
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                none
+              </span>
+              <span class="assignment_group_id">4040917</span>
+              <span class="assignment_id">group-4040917</span>
+              <span class="group_weight">0.0</span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          0% из всего
+        </td>
+        <td class="details">
+        </td>
+      </tr>
+      <tr id="final_grade_info_group-4040917"
+          class="comments "
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_group-4040917" class="comments grade_details " style="display: none;">
+        </td>
+      </tr>
+      <tr id="rubric_group-4040917" class="rubric_assessments " style="display: none;">
+      </tr>
+    <tr class="student_assignment hard_coded final_grade"
+        data-muted=""
+        id="submission_final-grade"
+        >
+
+        <th class="title" scope="row">
+            Всего
+        </td>
+        <td class="due">
+            
+        </td>
+
+
+        <td class="assignment_score" title="">
+          <div style="position: relative; height: 100%;" class="score_holder">
+            <span class="tooltip">
+              <span
+                class="grade"
+              >
+                <span class="tooltip_wrap right" aria-hidden="true">
+                    <span class="tooltip_text score_teaser">
+                        Всего
+                    </span>
+                </span>
+                  <span class="screenreader-only" role="link">
+                    
+                  </span>
+                  -
+              </span>
+            </span>
+            <div style="display: none;">
+              <!-- Store the original points so we don't need to parse and guess at locale -->
+              <span class="original_points">
+                
+              </span>
+              <!-- Store the original score so that we can retrieve it after any "What-If" calculations -->
+              <span class="original_score">
+                
+              </span>
+              <!-- Store the current score so that it can persist between multiple "What-If" calculations -->
+              <span class="what_if_score">
+                
+              </span>
+              <!-- Load any previously saved "What-If" scores -->
+              <span class="student_entered_score">
+                
+              </span>
+              <span class="submission_status">
+                none
+              </span>
+              <span class="assignment_group_id"></span>
+              <span class="assignment_id">final-grade</span>
+              <span class="group_weight"></span>
+              <span class="rules"></span>
+            </div>
+          </div>
+        </td>
+        <td class="possible points_possible">
+          
+        </td>
+        <td class="details">
+        </td>
+      </tr>
+      <tr id="final_grade_info_final-grade"
+          class="comments "
+          style="display: none;">
+      </tr>
+      <tr id="grade_info_final-grade" class="comments grade_details " style="display: none;">
+        </td>
+      </tr>
+      <tr id="rubric_final-grade" class="rubric_assessments " style="display: none;">
+      </tr>
+  </table>
+  </div>
+  <div id="total_groups_weight" style="display: none;">100.0</div>
+  
+<div id="rubric_long_description_dialog" style="display: none;">
+  <div class="editing">
+    <form id="edit_criterion_form" class="no-margin-bottom">
+      <div>
+        <label class="rating_form_label">Описание
+          <textarea class="description" rows="1" name="description"></textarea>
+        </label>
+      </div>
+      <div>
+        <label class="rating_form_label">Длинное описание
+          <textarea class="long_description" rows="4" name="long_description"></textarea>
+        </label>
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn btn button-secondary cancel_button">Отменить</button>
+        <button type="button" class="btn save_button btn-primary">Обновить критерий</button>
+      </div>
+    </form>
+  </div>
+  <div class="displaying">
+    <div class="long_description">
+    </div>
+  </div>
+</div>
+<div id="rubric_criterion_comments_dialog" style="display: none;">
+  <div
+    class="criterion_description"
+    style="border-bottom: 1px solid #ccc; padding: 5px 0; font-size: 1.2em; font-weight: bold; margin-bottom: 5px;"
+    tabindex="-1"
+  ></div>
+  <div class="editing">
+    <label for="criterion_comments_textarea">
+      Дополнительные комментарии:
+    </label>
+    <textarea
+      id="criterion_comments_textarea"
+      class="criterion_comments"
+      name="criterion_comments"
+      style="width: 370px;"></textarea>
+    <div class="button-container">
+      <button type="button" class="btn btn button-secondary cancel_button">Отменить</button>
+      <button type="button" class="btn save_button">Обновить комментарии</button>
+    </div>
+  </div>
+  <div class="displaying">
+    Дополнительные комментарии:
+    <div class="criterion_comments" style="margin-top: 10px;">
+    </div>
+  </div>
+</div>
+<div id="rubric_rating_dialog" style="display: none;">
+  <div class="description" style="border-bottom: 1px solid #ccc; padding: 5px 0; font-size: 1.2em; font-weight: bold; margin-bottom: 5px;">
+    <span id="edit_rating_form_criterion_description"></span>
+  </div>
+  <div class="editing">
+    <form id="edit_rating_form" class="no-margin-bottom">
+      <div>
+        <div><label id='rating_form_score_label' class="rating_form_label">Оценка</label></div>
+        <span id='rating_form_max_score_label' hidden>Максимальная оценка</span>
+        <input id="points" aria-labelledby="rating_form_score_label" type="text" size="2" name="points" class="no-margin-bottom span1" />
+        <span class="range_rating">к >
+          <input aria-label="Минимальная оценка" type="text" size="2" name="min_points" class="no-margin-bottom span1 min_points" placeholder="мин"/>
+        </span>баллы
+      </div>
+      <div>
+        <label for="rating_form_title" class="rating_form_label">Название оценки</label>
+        <input id="rating_form_title" type="text" class="rating_description" style="width: 90%;" name="description"/>
+      </div>
+      <div>
+        <label for="rating_form_description" class="rating_form_label">Описание оценки</label>
+        <textarea id="rating_form_description" rows="4" style="width: 90%;" class="rating_long_description" name="rating_long_description" form="edit_rating_form"></textarea>
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn button-secondary cancel_button">Отменить</button>
+        <button type="button" class="btn btn-primary save_button ok_button">Обновить оценку</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  <input type="text" style="width: 40px; display: none;" id="grade_entry" title="Ввести оценку для теста"/>
+  <a href="#" id="revert_score_template" class="revert_score_link" title="Вернуть исходную оценку"><i class="icon-reply-2"></i></a>
+  <a href="/courses/623443/assignments/%7B%7B%20assignment_id%20%7D%7D/submissions/5754792" class="update_submission_url" style="display: none;">&nbsp;</a>
+</div>
+
+          </div>
+        </div>
+        <div id="right-side-wrapper" class="ic-app-main-content__secondary">
+          <aside id="right-side" role="complementary">
+                <div id="student-grades-right-content" style="display: none;">
+        <div class="student_assignment final_grade">
+          Всего: <span class="grade"></span>
+            <span class="final_letter_grade">
+              (<span class="grade" id="final_letter_grade_text">-</span>)
+            </span>
+        </div>
+          <div id="student-grades-whatif" class="show_guess_grades student-grades-revert-guess-button">
+            <button type="button" class="btn button-sidebar-wide show_guess_grades_link"> <i class="icon-check-plus"></i> Показать сохраненные оценки &quot;Что если&quot;</button>
+          </div>
+          <div id="student-grades-revert" class="revert_all_scores student-grades-revert-guess-button">
+            *ПРИМЕЧАНИЕ*: Это НЕ официальная оценка.<br/>
+            <button href="#" id="revert-all-to-actual-score" class="btn revert_all_scores_link"><i class="icon-reply-2"></i> Вернуться к фактической оценке</button>
+          </div>
+      <div id="student-grades-show-all" class="show_all_details">
+        <button type="button" class="Button" id="show_all_details_button">Показать все сведения</button>
+      </div>
+      <div id="assignments-not-weighted">
+          
+<div role="complementary" aria-label="Вес заданий">
+  <h2>Задания взвешиваются по группам:</h2>
+
+  <table class="summary">
+    <thead>
+    <tr>
+      <th scope='col'>Группа</th>
+      <th scope='col'>Вес</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <th scope='row'>Assignments</th>
+          <td>0%</td>
+        </tr>
+        <tr>
+          <th scope='row'>Предварительный экзамен</th>
+          <td>50%</td>
+        </tr>
+        <tr>
+          <th scope='row'>Экзамены по главам</th>
+          <td>25%</td>
+        </tr>
+        <tr>
+          <th scope='row'>Практические экзамены</th>
+          <td>12 ,5%</td>
+        </tr>
+        <tr>
+          <th scope='row'>Практический выпускной экзамен</th>
+          <td>0%</td>
+        </tr>
+        <tr>
+          <th scope='row'>Итоговый экзамен</th>
+          <td>12 ,5%</td>
+        </tr>
+        <tr>
+          <th scope='row'> Успеваемость учащегося</th>
+          <td>0%</td>
+        </tr>
+      <tr style="font-weight: bold;">
+        <th scope='row'>Всего</th>
+        <td>100%</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+          <div id="only_consider_graded_assignments_wrapper" class="ic-Form-control ic-Form-control--checkbox">
+            <input type="checkbox" id="only_consider_graded_assignments" checked="true"/>
+            <label class="ic-Label" for="only_consider_graded_assignments">Подсчитать только на основе заданий с оценками</label>
+          </div>
+      </div>
+        <div id="whatif-score-description">
+          Вы можете просматривать свои оценки только в режиме «что, если», чтобы понимать, как на них будут влиять предстоящие или повторно сданные задания. Вы можете проверять оценки за задание, которое уже включает оценку или пока не было оценено.
+        </div>
+    </div>
+
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div style="display:none;"><!-- Everything inside of this should always stay hidden -->
+        <div id="page_view_id">dfa287e2-ced3-4908-9e12-2530eefffad5</div>
+    </div>
+  <div id='aria_alerts' class='hide-text affix' role="alert" aria-live="assertive"></div>
+  <div id='StudentTray__Container'></div>
+  
+
+<script>
+  INST = {"environment":"production","allowMediaComments":true,"kalturaSettings":{"domain":"nv.instructuremedia.com","resource_domain":"nv.instructuremedia.com","rtmp_domain":"fms-prod.instructuremedia.com","partner_id":"11","subpartner_id":"0","player_ui_conf":"0","kcw_ui_conf":"0","upload_ui_conf":"0","max_file_size_bytes":534773760,"do_analytics":false,"hide_rte_button":false,"js_uploader":true},"disableScribdPreviews":true,"logPageViews":true,"maxVisibleEditorButtons":3,"editorButtons":[]};
+  ENV = {"ASSET_HOST":"https://d1jq7b267o5dk8.cloudfront.net","active_brand_config_json_url":"https://d1jq7b267o5dk8.cloudfront.net/dist/brandable_css/889526347faa3e96fe481e0549b53aa0/variables-750d72b9d3e5d522f965bf904110c132.json","url_to_what_gets_loaded_inside_the_tinymce_editor_css":["https://d1jq7b267o5dk8.cloudfront.net/dist/brandable_css/889526347faa3e96fe481e0549b53aa0/variables-750d72b9d3e5d522f965bf904110c132.css","https://d1jq7b267o5dk8.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-53dac18d10.css"],"url_for_high_contrast_tinymce_editor_css":["https://d1jq7b267o5dk8.cloudfront.net/dist/brandable_css/default/variables-high_contrast-750d72b9d3e5d522f965bf904110c132.css","https://d1jq7b267o5dk8.cloudfront.net/dist/brandable_css/new_styles_high_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-b4d65fe883.css"],"current_user_id":"5754792","current_user_roles":["user","student"],"current_user_disabled_inbox":false,"files_domain":"1388393.netacad.com","DOMAIN_ROOT_ACCOUNT_ID":10000000010312,"k12":false,"use_responsive_layout":false,"help_link_name":"Справка","help_link_icon":"help","use_high_contrast":false,"LTI_LAUNCH_FRAME_ALLOWANCES":["geolocation *","microphone *","camera *","midi *","encrypted-media *"],"SETTINGS":{"open_registration":false,"eportfolios_enabled":true,"collapse_global_nav":false,"show_feedback_link":true,"enable_profiles":true},"current_user":{"id":"5754792","display_name":"George","avatar_image_url":"https://1388393.netacad.com/images/messages/avatar-50.png","html_url":"https://1388393.netacad.com/about/5754792"},"page_view_update_url":"/page_views/dfa287e2-ced3-4908-9e12-2530eefffad5?page_view_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpIjoiZGZhMjg3ZTItY2VkMy00OTA4LTllMTItMjUzMGVlZmZmYWQ1IiwidSI6MTAwMDAwMDU3NTQ3OTIsImMiOiIyMDE4LTA1LTEwVDE4OjI4OjE1LjM0WiJ9.q4g_S1oAdSbJEnO4mJUSMyZgnh1N68OVxJnoa-ROyv4","context_asset_string":"course_623443","ping_url":"https://1388393.netacad.com/api/v1/courses/623443/ping","TIMEZONE":"Asia/Riyadh","CONTEXT_TIMEZONE":"Europe/Moscow","LOCALE":"ru","BIGEASY_LOCALE":"ru_RU","FULLCALENDAR_LOCALE":"ru","MOMENT_LOCALE":"ru","submissions":[{"assignment_id":"12484814","score":96.3,"excused":false,"workflow_state":"graded"},{"assignment_id":"12484822","score":10.0,"excused":false,"workflow_state":"graded"},{"assignment_id":"12484821","score":90.9,"excused":false,"workflow_state":"graded"},{"assignment_id":"12484820","score":96.0,"excused":false,"workflow_state":"graded"},{"assignment_id":"12484807","score":80.0,"excused":false,"workflow_state":"graded"},{"assignment_id":"12484819","score":96.2,"excused":false,"workflow_state":"graded"},{"assignment_id":"12484818","score":100.0,"excused":false,"workflow_state":"graded"},{"assignment_id":"12484812","score":93.54,"excused":false,"workflow_state":"graded"},{"assignment_id":"12484801","score":null,"excused":false,"workflow_state":"unsubmitted"},{"assignment_id":"12484802","score":null,"excused":false,"workflow_state":"unsubmitted"},{"assignment_id":"12484803","score":null,"excused":false,"workflow_state":"unsubmitted"},{"assignment_id":"12484804","score":null,"excused":false,"workflow_state":"unsubmitted"},{"assignment_id":"12484805","score":null,"excused":false,"workflow_state":"unsubmitted"},{"assignment_id":"12484806","score":null,"excused":false,"workflow_state":"unsubmitted"},{"assignment_id":"12484808","score":null,"excused":false,"workflow_state":"unsubmitted"},{"assignment_id":"12484809","score":null,"excused":false,"workflow_state":"unsubmitted"},{"assignment_id":"12484810","score":null,"excused":false,"workflow_state":"unsubmitted"},{"assignment_id":"12484811","score":null,"excused":false,"workflow_state":"unsubmitted"},{"assignment_id":"12484813","score":null,"excused":false,"workflow_state":"unsubmitted"},{"assignment_id":"12484815","score":null,"excused":false,"workflow_state":"unsubmitted"},{"assignment_id":"12484816","score":null,"excused":false,"workflow_state":"unsubmitted"},{"assignment_id":"12484817","score":null,"excused":false,"workflow_state":"unsubmitted"}],"assignment_groups":[{"id":"4040904","rules":{},"group_weight":0.0,"assignments":[]},{"id":"4040912","rules":{},"group_weight":50.0,"assignments":[{"id":"12484812","submission_types":["external_tool"],"points_possible":100.0,"due_at":null,"omit_from_final_grade":false,"muted":false}]},{"id":"4040913","rules":{},"group_weight":25.0,"assignments":[{"id":"12484806","submission_types":["external_tool"],"points_possible":100.0,"due_at":"2018-04-07T20:59:59Z","omit_from_final_grade":false,"muted":false},{"id":"12484807","submission_types":["external_tool"],"points_possible":100.0,"due_at":"2018-04-28T20:59:59Z","omit_from_final_grade":false,"muted":false},{"id":"12484813","submission_types":["external_tool"],"points_possible":100.0,"due_at":"2018-04-07T20:59:59Z","omit_from_final_grade":false,"muted":false},{"id":"12484814","submission_types":["external_tool"],"points_possible":100.0,"due_at":"2018-05-05T20:59:59Z","omit_from_final_grade":false,"muted":false},{"id":"12484815","submission_types":["external_tool"],"points_possible":100.0,"due_at":"2018-04-07T20:59:59Z","omit_from_final_grade":false,"muted":false},{"id":"12484816","submission_types":["external_tool"],"points_possible":100.0,"due_at":"2018-04-14T20:59:59Z","omit_from_final_grade":false,"muted":false},{"id":"12484817","submission_types":["external_tool"],"points_possible":100.0,"due_at":"2018-04-14T20:59:59Z","omit_from_final_grade":false,"muted":false},{"id":"12484818","submission_types":["external_tool"],"points_possible":100.0,"due_at":"2018-04-21T20:59:59Z","omit_from_final_grade":false,"muted":false},{"id":"12484819","submission_types":["external_tool"],"points_possible":100.0,"due_at":"2018-04-21T20:59:59Z","omit_from_final_grade":false,"muted":false},{"id":"12484820","submission_types":["external_tool"],"points_possible":100.0,"due_at":"2018-04-28T20:59:59Z","omit_from_final_grade":false,"muted":false},{"id":"12484821","submission_types":["external_tool"],"points_possible":100.0,"due_at":"2018-04-28T20:59:59Z","omit_from_final_grade":false,"muted":false},{"id":"12484822","submission_types":["external_tool"],"points_possible":10.0,"due_at":"2018-05-05T20:59:59Z","omit_from_final_grade":false,"muted":false}]},{"id":"4040914","rules":{},"group_weight":12.5,"assignments":[{"id":"12484803","submission_types":["external_tool"],"points_possible":100.0,"due_at":null,"omit_from_final_grade":false,"muted":false},{"id":"12484804","submission_types":["external_tool"],"points_possible":100.0,"due_at":"2018-05-12T20:59:59Z","omit_from_final_grade":false,"muted":false},{"id":"12484805","submission_types":["external_tool"],"points_possible":100.0,"due_at":null,"omit_from_final_grade":false,"muted":false},{"id":"12484811","submission_types":["none"],"points_possible":100.0,"due_at":null,"omit_from_final_grade":false,"muted":false}]},{"id":"4040915","rules":{},"group_weight":0.0,"assignments":[{"id":"12484809","submission_types":["external_tool"],"points_possible":100.0,"due_at":null,"omit_from_final_grade":false,"muted":false},{"id":"12484810","submission_types":["external_tool"],"points_possible":100.0,"due_at":null,"omit_from_final_grade":false,"muted":false}]},{"id":"4040916","rules":{},"group_weight":12.5,"assignments":[{"id":"12484801","submission_types":["external_tool"],"points_possible":100.0,"due_at":"2018-05-12T20:59:59Z","omit_from_final_grade":false,"muted":false}]},{"id":"4040917","rules":{},"group_weight":0.0,"assignments":[{"id":"12484802","submission_types":["none"],"points_possible":100.0,"due_at":null,"omit_from_final_grade":false,"muted":false},{"id":"12484808","submission_types":["external_tool"],"points_possible":100.0,"due_at":null,"omit_from_final_grade":false,"muted":false}]}],"assignment_sort_options":[["Дата выполнения", "2"],["RISHAT", "0"],["ACAD","a"],["OFFICE","b"],["RECORDS","c"],["FINAL-A","finalA"],["FINAL-B","finalB"],["Модуль","module"]],"group_weighting_scheme":"percent","show_total_grade_as_points":false,"grading_scheme":[["10",0.95],["9",0.9],["8",0.85],["7",0.8],["6",0.75],["5",0.7],["4",0.6],["3",0.5],["2",0.3],["1",0.15],["F",0.0]],"current_grading_period_id":null,"current_assignment_sort_order":"due_at","grading_period_set":null,"grading_period":null,"grading_periods":null,"courses_with_grades":[{"id":"623441","nickname":"612-2","url":"/courses/623441/grades","grading_period_set_id":null},{"id":"623443","nickname":"612-1","url":"/courses/623443/grades","grading_period_set_id":null}],"effective_due_dates":null,"exclude_total":false,"save_assignment_order_url":"https://1388393.netacad.com/courses/623443/save_assignment_order","student_outcome_gradebook_enabled":false,"student_id":"5754792","students":[{"id":"5754792","name":"George","sortable_name":"Ivanov, Ivan","workflow_state":"registered","time_zone":"Asia/Riyadh","created_at":"2018-02-10T06:38:01Z","updated_at":"2018-05-05T07:25:29Z","avatar_image_url":null,"avatar_image_source":null,"avatar_image_updated_at":null,"school_name":null,"school_position":null,"short_name":"Ivan Ivanov","deleted_at":null,"show_user_services":true,"gender":null,"page_views_count":0,"reminder_time_for_due_dates":172800,"reminder_time_for_grading":0,"storage_quota":null,"visible_inbox_types":null,"last_user_note":null,"subscribe_to_emails":null,"preferences":{"custom_colors":{"course_623441":"#629f56"}},"avatar_state":"none","locale":"ru","browser_locale":null,"unread_conversations_count":0,"stuck_sis_fields":["short_name"],"public":null,"birthdate":null,"initial_enrollment_type":null,"crocodoc_id":null,"registration_remote_ip":null,"last_logged_out":"2018-05-05T07:25:45Z","country_code":null,"lti_context_id":"cd27d6b9439f57a7bb78692763c6a8aa13e14c85","turnitin_id":null}],"badge_counts":{"submissions":0},"notices":[]};
+</script>
+
+<script src="https://d1jq7b267o5dk8.cloudfront.net/dist/webpack-production/navigation_header.bundle-0b6dce220a.js" defer="defer"></script>
+<script src="https://s3.amazonaws.com/cisco_instructure_uploads/account_2/attachments/59213460/canvas_override_PROD.js" defer="defer"></script>
+
+</div> <!-- #application -->
+<textarea id="copy_field" style="width: 1px;">default</textarea>
+</body>
+</html>
+
+

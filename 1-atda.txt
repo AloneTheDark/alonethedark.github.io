@@ -1,6 +1,6 @@
 en
 conf ter
-hostname Main (Central)
+hostname Central
 no ip domain-lookup 
 enable secret cisco
 

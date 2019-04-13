@@ -1,4 +1,4 @@
-Switch(config)#hostname SW-1[CHECK HOSTNAME ON INSTRUCTIONS]
+Switch(config)#hostname SW-1
 SW-1(config)#banner motd $This is Switch$
 
 SW-1(config)#line console 0

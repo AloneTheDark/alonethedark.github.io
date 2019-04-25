@@ -1,0 +1,30 @@
+vlan 20
+name Clerical
+vlan 40
+name Acct
+vlan 60
+name HR
+vlan 88
+name NetAdmin
+exit
+
+int range fa0/1-5
+switchport mode access 
+switchport access vlan 20
+int range fa0/6-10
+switchport mode access 
+switchport access vlan 40
+int range fa0/11-15
+switchport mode access 
+switchport access vlan 60
+exit
+int vlan 88
+ip add 172.16.88.251 255.255.255.0
+no shutdown 
+exit 
+
+ip default-gateway 172.16.88.254
+vtp domain School
+
+int f0/24
+switchport mode trunk

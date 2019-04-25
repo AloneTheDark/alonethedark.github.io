@@ -1,0 +1,32 @@
+no ip domain-lookup 
+enable secret cisco
+line console 0
+password cisco
+login
+line vty 0 15
+password cisco
+login
+exit 
+service password-encryption 
+vlan 20
+name Clerical
+vlan 40
+name Acct
+vlan 60
+name HR
+vlan 88
+name NetAdmin
+exit
+
+int vlan 88
+ip add 172.16.88.253 255.255.255.0
+no shutdown 
+exit 
+ip default-gateway 172.16.88.254
+vtp domain School
+
+int g0/1
+switchport mode trunk 
+int range f0/23-24
+switchport mode trunk 
+

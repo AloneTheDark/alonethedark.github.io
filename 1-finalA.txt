@@ -1,0 +1,93 @@
+enable 
+configure terminal 
+no ip domain-lookup 
+hostname Main
+service password-encryption 
+enable secret class
+banner motd $users that unauthorized access is prohibited$
+line console 0
+logging synchronous 
+password cisco
+login
+exit
+ip domain-name cisco.com
+username admin password class
+crypto key generate rsa 
+yes
+1024
+ip ssh version 2
+line vty 0 15
+transport input ssh
+login local 
+exit 
+
+interface gigabitEthernet 0/1
+ip address 192.168.2.1 255.255.255.0
+no shutdown 
+description Local-1
+
+int s0/0/0
+ip address 10.1.1.1 255.255.255.252
+no shutdown 
+description Connection-to-Branch
+exit
+
+interface g0/0.5
+encapsulation dot1Q 5
+ip address 192.168.1.1 255.255.255.240
+
+interface g0/0.10
+encapsulation dot1Q 10
+ip address 192.168.1.17 255.255.255.240
+
+interface g0/0.15
+encapsulation dot1Q 15
+ip address 192.168.1.33 255.255.255.240
+
+interface g0/0.50
+encapsulation dot1Q 50
+ip address 192.168.1.49 255.255.255.240
+exit
+
+int g0/0
+no sh
+no shutdown 
+exit 
+
+ip access-list standard block15
+deny 192.168.1.32 0.0.0.15
+permit any
+
+ip access-list standard ACL
+line vty 0
+access-class ACL in
+
+int g0/0.10
+ip access-group block15 out 
+exit
+
+Router rip
+version 2
+network 10.1.1.0
+network 192.168.1.0
+network 192.168.1.16
+network 192.168.1.32
+network 192.168.1.48
+network 192.168.2.0
+no auto-summary
+passive-interface g0/0.5
+passive-interface g0/0.10
+passive-interface g0/0.15
+passive-interface g0/0.50
+passive-interface g0/0
+passive-interface g0/1
+exit
+
+service timestamps log datetime msec
+service timestamps debug datetime msec
+ntp server 192.168.2.10
+
+logging 192.168.2.10
+
+logging trap debugging
+ntp update-calendar

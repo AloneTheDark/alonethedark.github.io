@@ -1,0 +1,21 @@
+enable 
+configure terminal 
+vlan 5
+name ACAD
+vlan 10
+name TEACH
+vlan 15
+name STUDENT
+vlan 50
+name NETADMIN
+exit 
+
+interface range f0/23, f0/24, g0/1
+switchport mode trunk
+exit
+
+int vlan 50
+ip address 192.168.1.50 255.255.255.240
+no shutdown 
+exit 
+ip default-gateway 192.168.1.49

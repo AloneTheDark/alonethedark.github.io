@@ -1,0 +1,35 @@
+enable 
+configure terminal 
+
+vlan 5
+name OFFICE
+vlan 10
+name ACCT
+vlan 15
+name PROD
+vlan 50
+name ADMIN
+
+exit 
+int f0/24
+switchport mode trunk 
+exit 
+interface f0/5
+switchport mode access 
+switchport access vlan 5
+interface f0/10
+switchport mode access 
+switchport access vlan 10
+interface f0/15
+switchport mode access 
+switchport access vlan 15
+
+interface f0/20
+switchport mode access 
+switchport access vlan 50
+
+int vlan 50
+ip add 192.168.1.52 255.255.255.240
+no sh
+exit
+ip default-gateway 192.168.1.49

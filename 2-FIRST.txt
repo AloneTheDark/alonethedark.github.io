@@ -1,0 +1,109 @@
+/////////// Housing Router Configuration ////////////
+
+enable
+configure terminal
+
+hostname Housing
+
+enable secret cisco
+
+line console 0
+password cisco
+login
+exit
+
+line vty 0 4
+password cisco
+login
+exit
+
+line aux 0
+password cisco
+login
+exit
+
+service password-encryption
+
+banner motd $Authorized Personnel Only$
+
+interface g0/0
+ip address 172.16.5.1 255.255.255.0
+no shutdown
+description Bldg1 LAN
+exit
+
+interface g0/1
+ip address 192.168.5.1 255.255.255.0
+no shutdown
+description Bldg2 LAN
+end
+
+write
+
+/////////// Bldg1 Switch Configuration ///////////
+
+enable
+configure terminal
+
+hostname Bldg1
+
+enable secret class
+
+line console 0
+password cisco
+login
+exit
+
+line vty 0 4
+password cisco
+login
+exit
+
+service password-encryption
+
+banner motd $Authorized Personnel Only$
+
+interface vlan 1
+ip address 172.16.5.2 255.255.255.0
+no shutdown
+description Bldg1 – Housing LAN
+exit
+
+ip default-gateway 172.16.5.1
+
+end
+write
+
+/////////// Bldg2 Switch Configuration /////////
+
+enable
+configure terminal
+
+hostname Bldg2
+
+enable secret class
+
+line console 0
+password cisco
+login
+exit
+
+line vty 0 4
+password cisco
+login
+exit
+
+service password-encryption
+
+banner motd $Authorized Personnel Only$
+
+interface vlan 1
+ip address 192.168.5.252 255.255.255.0
+no shutdown
+description Bldg2 – Housing LAN
+exit
+
+ip default-gateway 192.168.5.1
+end
+
+write

@@ -1,0 +1,109 @@
+/////////// College Router Configuration /////////
+
+enable
+configure terminal
+
+hostname College
+
+enable secret cisco
+
+line console 0
+password cisco
+login
+exit
+
+line vty 0 4
+password cisco
+login
+exit
+
+line aux 0
+password cisco
+login
+exit
+
+service password-encryption
+
+banner motd $Authorized Personnel Only$
+
+interface g0/0
+ip address 172.16.5.1 255.255.255.0
+no shutdown
+description Faculty LAN
+exit
+
+interface g0/1
+ip address 192.168.5.1 255.255.255.0
+no shutdown
+description Admin LAN
+end
+
+write
+
+///////////// Faculty Switch Configuration /////////
+
+enable
+configure terminal
+
+hostname Faculty
+
+enable secret class
+
+line console 0
+password cisco
+login
+exit
+
+line vty 0 4
+password cisco
+login
+exit
+
+service password-encryption
+
+banner motd $Authorized Personnel Only$
+
+interface vlan 1
+ip address 172.16.5.2 255.255.255.0
+no shutdown
+description Faculty – College LAN
+exit
+
+ip default-gateway 172.16.5.1
+
+end
+write
+
+///////////// Admin Switch Configuration ////////////
+
+enable
+configure terminal
+
+hostname Admin
+
+enable secret class
+
+line console 0
+password cisco
+login
+exit
+
+line vty 0 4
+password cisco
+login
+exit
+
+service password-encryption
+
+banner motd $Authorized Personnel Only$
+
+interface vlan 1
+ip address 192.168.5.252 255.255.255.0
+no shutdown
+description Admin – College LAN
+exit
+
+ip default-gateway 192.168.5.1
+end
+
+write
